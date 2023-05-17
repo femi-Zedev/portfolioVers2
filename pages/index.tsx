@@ -5,7 +5,7 @@ export default function home() {
   return (
     <>
       <Head>
-        <title>Arnaud AKOTONOU | Web Developer</title>
+        <title>Femi | Web Developer</title>
         <meta name="description" content="Bleep boop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

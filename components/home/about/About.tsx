@@ -15,8 +15,8 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey! I&apos;m Femi Arnaud AKOTONOU, if you haven&apos;t already gathered that by
-              now. I&apos;m  a young frontend developper with over 4 years of experience by now. I specialize in frontend, mainly javascript stacks.
+              Hey! I&apos;m Femi Arnaud AKOTONOU; for the full name.
+              I&apos;m  a young frontend developper with over 4 years of experience by now. I specialize in frontend development, mainly javascript stacks.
               I have good understanding of SQL and NoSQL databases, but I like to turn to SaaS solutions like Supabase or Firebase when it comes to design my backends
             </p>
           </Reveal>
