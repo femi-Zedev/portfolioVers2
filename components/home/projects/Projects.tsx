@@ -46,7 +46,7 @@ const projects = [
   {
     title: "Teska Booking",
     imgSrc: "project-imgs/teska.png",
-    code: "https://github.com/arnaudakotonou97/booking-app",
+    code: "https://github.com/femi-Zedev/booking-app",
     projectLink: "https://teska-travel.netlify.app/",
     tech: ["React", "Mantine UI", "Tailwind CSS"],
     description:
