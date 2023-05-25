@@ -1,16 +1,24 @@
-import Head from "next/head";
 import { Home } from "@/components/home/Home";
+import { GetStaticProps, NextPage } from "next";
+import { loadTranslation } from '@/utils'
 
-export default function home() {
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const translation = await loadTranslation(
+    ctx.locale!,
+  )
+  return {
+    props: {
+      translation
+    }
+  }
+}
+
+const home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Femi | Web Developer</title>
-        <meta name="description" content="Bleep boop" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Home />
     </>
   );
 }
+
+export default home

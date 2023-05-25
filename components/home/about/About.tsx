@@ -4,6 +4,7 @@ import { SectionHeader } from "@/components/utils/SectionHeader";
 import styles from "./about.module.scss";
 import { Stats } from "./Stats";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Trans } from '@lingui/macro'
 
 export const About = () => {
   return (
@@ -15,9 +16,11 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
+            <Trans id="about-text">
               Hey! I&apos;m Femi Arnaud AKOTONOU, for the full name. <br />
               I&apos;m  a young frontend developper with over 4 years of experience by now. I specialize in frontend development, mainly javascript stacks.
               I have good understanding of SQL and NoSQL databases, but I like to turn to SaaS solutions like Supabase or Firebase when it comes to design my backends
+            </Trans>
             </p>
           </Reveal>
           <Reveal>

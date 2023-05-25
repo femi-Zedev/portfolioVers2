@@ -1,0 +1,13 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-05-25 18:14+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+
+#. js-lingui-explicit-id
+#: components/home/about/About.tsx:19
+msgid "about-text"
+msgstr "Hey! I'm Femi Arnaud AKOTONOU, for the full name. <0/>I'm  a young frontend developper with over 4 years of experience by now. I specialize in frontend development, mainly javascript stacks. I have good understanding of SQL and NoSQL databases, but I like to turn to SaaS solutions like Supabase or Firebase when it comes to design my backends"
