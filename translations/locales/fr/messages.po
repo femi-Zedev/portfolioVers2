@@ -6,8 +6,88 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: fr\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: components/home/about/About.tsx:19
+#: components/home/about/About.tsx:12
+#: components/nav/SideBar.tsx:49
+msgid "about.title"
+msgstr "A propos"
+
+#. js-lingui-explicit-id
+#: components/home/hero/Hero.tsx:35
+msgid "hero-cta"
+msgstr "Prenons contact"
+
+#~ msgid "experience-title"
+#~ msgstr "Expérience professionnel"
+
+#. js-lingui-explicit-id
+#: components/home/hero/Hero.tsx:13
+msgid "hero-hi"
+msgstr "Hello, Je m'appelle Femi"
+
+#. js-lingui-explicit-id
+#: components/home/about/About.tsx:17
 msgid "about-text"
-msgstr ""
+msgstr "Salut! Je m'apelle Arnaud AKOTONOU. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 4 ans d'expérience. Ces dernières années je me suis consacré à développer avec les stacks de javascripts. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes backends"
+
+#: components/home/about/About.tsx:34
+msgid "I have experience with mobile development, with Ionic and NativeScript frameworks. I also had to collaborate on a React Native project in a short time. Last year I didn't spend much time on mobile development but I plan to get back to it with Flutter and ReactNative since they are the most popular frameworks on the market today."
+msgstr "J'ai de l'expérience dans le développement mobile, avec les frameworks Ionic et NativeScript. J'ai également eu à collaborer sur un projet React Native sur une courte période. Je prévois cette année de reprendre le développement mobile avec Flutter et ReactNative, car ce sont les frameworks les plus populaires sur le marché aujourd'hui."
+
+#. js-lingui-explicit-id
+#: components/home/hero/Hero.tsx:20
+msgid "hero-role"
+msgstr "Je suis <0>Dévelopeur Frontend</0>"
+
+#: components/home/about/About.tsx:27
+msgid "I'm currently working in freelance on <0>Comup.com</0>. <1/> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React"
+msgstr "Je travaille actuellement en tant que freelance sur <0>Comup.com</0>. <1/> J'aide principalement les particuliers et les startups à concevoir leurs interfaces utilisateur ; je dévelope également leurs applications web avec React."
+
+#: components/home/about/About.tsx:43
+msgid "I'm passively looking for new positions where I can merge my love for code with my love for good looking screens. If you think you've got an opening that I might like, let's connect 🔗"
+msgstr "Je suis intéressé par les offres d'entreprises exerçant dans les domaines innovants et proposant une position de dévelopeur frontent dans la région du Québec de préférence ou autre ville au Canada. Si vous pensez avoir un poste à pourvoir qui pourrait me plaire, prenons contact 🔗."
+
+#: components/home/hero/Hero.tsx:25
+msgid "I've spent the last 4 years building and scaling software for some pretty cool companies. I'm also a great advocate of good user experience and good looking app screens 📱. that's why I help startups and individuals to come up with a prototype of their ideas with the help of figma. Let's connect!"
+msgstr "J'ai passé les 04 dernières années à développer et faire évoluer des applications pour des entreprise plutôt cool. 04 années riches d'expérience tant technique, qu'humaine. Je suis également un grand défenseur de l'expérience des utilisateurs sur les produits technologiques 📱. C'est pour cette raison que j'aide les startups et les particuliers à concevoir les UIs et les prototypes de leurs produits avec FIGMA. Prenons contact !"
+
+#: components/home/contact/Contact.tsx:31
+msgid "if that's more your speed."
+msgstr "si cela vous convient plus"
+
+#: components/home/about/About.tsx:54
+msgid "My links"
+msgstr "Liens utiles"
+
+#. js-lingui-explicit-id
+#: components/nav/Heading.tsx:33
+msgid "heading-resume-btn"
+msgstr "Mon CV"
+
+#: components/home/contact/Contact.tsx:27
+msgid "or"
+msgstr "ou"
+
+#. js-lingui-explicit-id
+#: components/nav/SideBar.tsx:59
+msgid "projects.title"
+msgstr "Projets"
+
+#: components/home/contact/Contact.tsx:18
+msgid "Shoot me an email if you want to connect! You can also find me on"
+msgstr "Envoyez-moi un e-mail si vous voulez vous connecter ! Vous pouvez également me trouver sur"
+
+#: components/home/about/Stats.tsx:13
+msgid "Use at work"
+msgstr "Utilisé en entreprise"
+
+#: components/home/about/Stats.tsx:32
+msgid "Use for fun"
+msgstr "Sur projets personnelle"

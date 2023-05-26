@@ -6,8 +6,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: pseudo\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: components/home/about/About.tsx:19
+#: components/nav/SideBar.tsx:59
+#~ msgid "projects-title"
+#~ msgstr ""
+
+#. js-lingui-explicit-id
+#: components/nav/SideBar.tsx:49
+#~ msgid "about-title"
+#~ msgstr ""
+
+#. js-lingui-explicit-id
+#: components/home/about/About.tsx:12
+#: components/nav/SideBar.tsx:49
+msgid "about.title"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: components/home/hero/Hero.tsx:35
+msgid "hero-cta"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: components/home/hero/Hero.tsx:13
+msgid "hero-hi"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: components/home/about/About.tsx:17
 msgid "about-text"
+msgstr ""
+
+#: components/home/about/About.tsx:34
+msgid "I have experience with mobile development, with Ionic and NativeScript frameworks. I also had to collaborate on a React Native project in a short time. Last year I didn't spend much time on mobile development but I plan to get back to it with Flutter and ReactNative since they are the most popular frameworks on the market today."
+msgstr ""
+
+#. js-lingui-explicit-id
+#: components/home/hero/Hero.tsx:20
+msgid "hero-role"
+msgstr ""
+
+#: components/home/about/About.tsx:27
+msgid "I'm currently working in freelance on <0>Comup.com</0>. <1/> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React"
+msgstr ""
+
+#: components/home/about/About.tsx:43
+msgid "I'm passively looking for new positions where I can merge my love for code with my love for good looking screens. If you think you've got an opening that I might like, let's connect 🔗"
+msgstr ""
+
+#: components/home/hero/Hero.tsx:25
+msgid "I've spent the last 4 years building and scaling software for some pretty cool companies. I'm also a great advocate of good user experience and good looking app screens 📱. that's why I help startups and individuals to come up with a prototype of their ideas with the help of figma. Let's connect!"
+msgstr ""
+
+#: components/home/contact/Contact.tsx:31
+msgid "if that's more your speed."
+msgstr ""
+
+#: components/home/about/About.tsx:54
+msgid "My links"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: components/nav/Heading.tsx:33
+msgid "heading-resume-btn"
+msgstr ""
+
+#: components/home/contact/Contact.tsx:27
+msgid "or"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: components/nav/SideBar.tsx:59
+msgid "projects.title"
+msgstr ""
+
+#: components/home/contact/Contact.tsx:18
+msgid "Shoot me an email if you want to connect! You can also find me on"
+msgstr ""
+
+#: components/home/about/Stats.tsx:13
+msgid "Use at work"
+msgstr ""
+
+#: components/home/about/Stats.tsx:32
+msgid "Use for fun"
 msgstr ""

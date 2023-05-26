@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
+import { Trans, t } from '@lingui/macro'
 
 export const SideBar = () => {
   const [selected, setSelected] = useState("");
@@ -45,7 +46,7 @@ export const SideBar = () => {
         }}
         className={selected === "about" ? styles.selected : ""}
       >
-        About
+        <Trans id="about.title">About</Trans>
       </motion.a>
       <motion.a
         initial={{ x: -70 }}
@@ -55,7 +56,7 @@ export const SideBar = () => {
         onClick={() => setSelected("projects")}
         className={selected === "projects" ? styles.selected : ""}
       >
-        Projects
+       <Trans id="projects.title">Projects</Trans>
       </motion.a>
       <motion.a
         initial={{ x: -70 }}

@@ -19,3 +19,48 @@
     padding: 0 2.4rem;
   }
 }
+
+.flex_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.switcherButton {
+ padding: 1.4rem 1.6rem;
+ outline: none;
+ border: none;
+ position: relative;
+ z-index: 20;
+ overflow: hidden;
+ border-radius: 6px;
+ font-weight: 800;
+ background: #ffffff0d;
+ text-transform: uppercase;
+ border: 1none;
+ color: white;
+ cursor: pointer;
+ transition: 0.2s color;
+ 
+}
+
+.switcherButton::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  top: -100%;
+  transition: 0.2s left, 0.2s top;
+}
+
+.switcherButton:hover {
+  color: var(--background-dark);
+}
+
+.switcherButton:hover::before {
+  left: 0;
+  top: 0;
+}
