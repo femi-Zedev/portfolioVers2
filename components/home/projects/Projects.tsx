@@ -1,7 +1,7 @@
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
-import { Trans } from "@lingui/macro";
+import { Trans, msg } from "@lingui/macro";
 
 export const Projects = () => {
   return (
@@ -24,8 +24,7 @@ const projects = [
     // code: "https://www.github.com",
     projectLink: "https://uptimise.io/",
     tech: ["React", "MUI", "EmailJs", "Tailwind CSS", "Pipedrive"],
-    description:
-      "Uptimise landing page. Uptimise is a SaaS web app for human resources and payroll management.",
+    description:  msg({id: 'sumarry.uptimise'}),
     modalContent: (
       <>
         <p>
@@ -40,7 +39,7 @@ const projects = [
         </p>
         <p>
           <Trans>
-            There is a simulator for companies or individuals who want to estimate how much their employees cost
+            I've worked on a <a href="https://uptimise.io/simulateur" target="_blank" rel="noreferrer" className="externalLinks">simulator</a> for companies or individuals who want to estimate how much their employees cost.
           </Trans>
           {":)"}
         </p>
@@ -58,24 +57,22 @@ const projects = [
     code: "https://github.com/femi-Zedev/booking-app",
     projectLink: "https://teska-travel.netlify.app/",
     tech: ["React", "Mantine UI", "Tailwind CSS"],
-    description:
-      "A booking app, where travelers can make reservations for flights, hotels and car rentals",
+    description:  msg({id: 'summary.teska'}),
     modalContent: (
       <>
         <p>
           <Trans>
-            Teska booking is a booking application where travelers can make reservations for flights, hotels and car rentals, all without having to be in the host country in advance
+            Teska booking is a booking application that allows travelers to book flights, hotels and rental cars in advance of their trip.          
           </Trans>
         </p>
         <p>
           <Trans>
-            It is a project I contracted on comeUp. I work on the frontend of the app, it was planned to use Duffel&apos;s API to manage flights with their billing.
+            It is a project I contracted on comeUp. I worked on the frontend of the app, it was planned to use Duffel&apos;s API to manage flights with their billing.
           </Trans>
         </p>
         <p>
           <Trans>
             I enjoyed working on this project where I learned about flight booking and its specificities.
-            Nevertheless I am a bit sorry that the project did not go into production.
           </Trans>
         </p>
       </>
@@ -87,8 +84,7 @@ const projects = [
     // code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["NextJS", "Redux", "Mantine UI", "Laraval API"],
-    description:
-      "It is an internal restaurant order receipt manager for receipt generation and accounting automation ",
+    description: msg({id: 'summary.resto'}),
     modalContent: (
       <>
         <p>
@@ -98,13 +94,12 @@ const projects = [
         </p>
         <p>
           <Trans>
-            So managers, waiters, accountants can login and see receipts of a restaurant for a period
+            In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period.
           </Trans>
         </p>
         <p>
           <Trans>
-            Waiters see the available tables in a restaurant, decide to process a table&apos;s order and send it to the kitchen and when it been served , he can see the receipt for this order
-          </Trans>
+            Waiters see the available tables in a restaurant, process the order for a table and send it to the kitchen. When the order has been served, the waiter can see the receipt for that order.          </Trans>
         </p>
       </>
     ),
@@ -115,8 +110,7 @@ const projects = [
     // code: "https://www.github.com",
     projectLink: "https://loto-esh.vercel.app/jouer?token=LBDLOSE45ELW2W",
     tech: ["React", "Redux", "Mantine UI", "Laravel API"],
-    description:
-      "A gambling app where players win by getting a certain amount of correct numbers on a pre-filled grid",
+    description: msg({id: 'summary.loto'}),
     modalContent: (
       <>
         <p>

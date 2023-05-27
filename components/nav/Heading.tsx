@@ -21,6 +21,10 @@ export const Heading = () => {
     router.push(router.pathname, router.pathname, { locale })
   }
 
+  function openResumeViewer(){
+    router.locale === 'en' ? window.open("/resume_en.pdf") : window.open("/resume_fr.pdf")
+  }
+
   return (
     <header className={styles.heading}>
       <MyLinks />
@@ -29,7 +33,7 @@ export const Heading = () => {
         <button className={styles.switcherButton} onClick={handleLangChange}>
           {locale}
         </button>
-        <OutlineButton onClick={() => window.open("/resume_en.pdf")}>
+        <OutlineButton onClick={openResumeViewer}>
           <Trans id="heading-resume-btn">My resume</Trans>
         </OutlineButton>
       </div>

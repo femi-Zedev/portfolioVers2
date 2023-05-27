@@ -3,9 +3,7 @@ import { GetStaticProps, NextPage } from "next";
 import { loadTranslation } from '@/utils'
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const translation = await loadTranslation(
-    ctx.locale!,
-  )
+  const translation = await loadTranslation( ctx.locale! )
   return {
     props: {
       translation
@@ -13,7 +11,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   }
 }
 
-const home: NextPage = () => {
+const Index: NextPage = () => {
   return (
     <>
       <Home />
@@ -21,4 +19,4 @@ const home: NextPage = () => {
   );
 }
 
-export default home
+export default Index

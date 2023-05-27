@@ -25,7 +25,7 @@ export const About = () => {
 
             <p className={styles.aboutText} >
               <Trans>
-                I&apos;m currently working in freelance on <a href="https://comeup.com/@arnaudakotonou" target="_blank" rel="noreferrer" className={styles.externalLinks}>Comup.com</a>. <br /> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React
+                I&apos;m currently working in freelance on <a href="https://comeup.com/@arnaudakotonou" target="_blank" rel="noreferrer" className="externalLinks">Comup.com</a>. <br /> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React
               </Trans>
             </p>
           </Reveal>

@@ -14,6 +14,59 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:19
+msgid "works.role_1"
+msgstr "Dévelopeur Frontend"
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:21
+#: components/home/experience/Experience.tsx:37
+#: components/home/experience/Experience.tsx:45
+msgid "countryName"
+msgstr "République du Bénin"
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:22
+msgid "desc.erugis"
+msgstr "J'ai conduit le dévelopement des modules de l'application web Uptimise SaaS de concert avec l'équipe backend. Uptimise est un progiciel de gestion des ressources humaines et de la paie. J'ai intégré et développé le processus d'enrollement des employés avec leurs contrats et leur ancienneté. J'ai ensuite travaillé sur les modules d'avance sur salaire et de congés payés. J'ai également développé le site de présentation d'Uptimise."
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:35
+#: components/home/experience/Experience.tsx:43
+msgid "works.role_2"
+msgstr "Dévelopeur Angular"
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:38
+msgid "desc.dialectai"
+msgstr "J'ai participé au développement d'une application mobile avec Ionic. L'application est une place de marché qui met en relation les clients et les artisans. J'ai également développé une application web de bout en bout avec Angular pour entraîner les modèles vocaux des IA de Dialectai."
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:46
+msgid "desc.nautilus"
+msgstr "J'ai assuré l'intégration des UIs de l'application mobile MyFeda avec NativeScript. Réalisation de tests de sécurité et aide à la résolution de bugs sur les plugins Fedapay"
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:27
+msgid "sumarry.uptimise"
+msgstr "Site web de présentation d'Uptimise. Uptimise est une application web SaaS pour la gestion des ressources humaines et des fiches de paie."
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:60
+msgid "summary.teska"
+msgstr "Une application de réservation, où les voyageurs peuvent réserver des vols, des apartements et des voitures de location."
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:87
+msgid "summary.resto"
+msgstr "Il s'agit d'un gestionnaire interne de commandes pour les restaurants. Il automatise la génération de reçus et de certaines tâches comptabilité."
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:113
+msgid "summary.loto"
+msgstr "Une application de jeu de loto où les joueurs gagnent en obtenant un certain nombre de chiffres corrects sur une grille pré-remplie."
+
+#. js-lingui-explicit-id
 #: components/home/about/About.tsx:12
 #: components/nav/SideBar.tsx:49
 msgid "about.title"
@@ -24,8 +77,9 @@ msgstr "A propos"
 msgid "hero-cta"
 msgstr "Prenons contact"
 
-#~ msgid "experience-title"
-#~ msgstr "Expérience professionnel"
+#: components/home/experience/Experience.tsx:19
+#~ msgid "Frontend dev"
+#~ msgstr "Developpeur frontend"
 
 #. js-lingui-explicit-id
 #: components/home/hero/Hero.tsx:13
@@ -35,7 +89,15 @@ msgstr "Hello, Je m'appelle Femi"
 #. js-lingui-explicit-id
 #: components/home/about/About.tsx:17
 msgid "about-text"
-msgstr "Salut! Je m'apelle Arnaud AKOTONOU. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 4 ans d'expérience. Ces dernières années je me suis consacré à développer avec les stacks de javascripts. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes backends"
+msgstr "A nouveau, Bienvue! Femi Arnaud AKOTONOU pour le nom complet. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 4 ans d'expérience. Ces dernières années je me suis consacré à développer avec les stacks de javascripts. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes backends"
+
+#: components/home/projects/Projects.tsx:47
+msgid "I enjoyed building this web site and working on the Saas app, I learned a lot about Human resources, payroll and employee's rights and obligations"
+msgstr "J'ai apprécié déveloper ce site web et travailler sur l'application Saas. J'ai beaucoup appris sur les ressources humaines, la paie et les droits et obligations des employés."
+
+#: components/home/projects/Projects.tsx:74
+msgid "I enjoyed working on this project where I learned about flight booking and its specificities."
+msgstr "J'ai aimé travailler sur ce projet qui m'a permis d'en apprendre davantage sur la réservation de vols et ses spécificités."
 
 #: components/home/about/About.tsx:34
 msgid "I have experience with mobile development, with Ionic and NativeScript frameworks. I also had to collaborate on a React Native project in a short time. Last year I didn't spend much time on mobile development but I plan to get back to it with Flutter and ReactNative since they are the most popular frameworks on the market today."
@@ -56,11 +118,37 @@ msgstr "Je suis intéressé par les offres d'entreprises exerçant dans les doma
 
 #: components/home/hero/Hero.tsx:25
 msgid "I've spent the last 4 years building and scaling software for some pretty cool companies. I'm also a great advocate of good user experience and good looking app screens 📱. that's why I help startups and individuals to come up with a prototype of their ideas with the help of figma. Let's connect!"
-msgstr "J'ai passé les 04 dernières années à développer et faire évoluer des applications pour des entreprise plutôt cool. 04 années riches d'expérience tant technique, qu'humaine. Je suis également un grand défenseur de l'expérience des utilisateurs sur les produits technologiques 📱. C'est pour cette raison que j'aide les startups et les particuliers à concevoir les UIs et les prototypes de leurs produits avec FIGMA. Prenons contact !"
+msgstr "J'ai passé les 04 dernières années à développer et faire évoluer des applications pour des entreprise plutôt cool. 04 années riches d'expérience tant techniques, qu'humaines. Je suis également un fervant défenseur du User Experience sur les produits technologiques 📱. C'est d'ailleur pour cette raison que j'aide les startups et les particuliers à concevoir les UIs, le UX et les prototypes de leurs produits avec FIGMA. Prenons contact !"
+
+#: components/home/projects/Projects.tsx:41
+msgid "I've worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+msgstr "J'ai travaillé sur un <0>simulateur</0> pour les entreprises ou les particuliers qui souhaitent évaluer les coûts liés à leurs employés."
 
 #: components/home/contact/Contact.tsx:31
 msgid "if that's more your speed."
 msgstr "si cela vous convient plus"
+
+#: components/home/projects/Projects.tsx:96
+msgid "In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period."
+msgstr "Ainsi, les gérants, les serveurs et les comptables peuvent se connecter et consulter les recettes d'un restaurant pendant une période donnée."
+
+#: components/home/projects/Projects.tsx:69
+msgid "It is a project I contracted on comeUp. I worked on the frontend of the app, it was planned to use Duffel's API to manage flights with their billing."
+msgstr "C'est un projet que j'ai contracté sur comeUp. J'ai travaillé sur le frontend de l'application, il était prévu d'utiliser l'API de Duffel pour gérer les vols avec leur facturation."
+
+#. js-lingui-explicit-id
+#: components/home/projects/Project.tsx:100
+msgid "more"
+msgstr "En savoir plus"
+
+#. js-lingui-explicit-id
+#: components/home/projects/ProjectModal.tsx:74
+msgid "live-project"
+msgstr "projet live"
+
+#: components/home/projects/Projects.tsx:117
+msgid "Loto Esh is a gambling game app. Its goal is to get a certain number of correct numbers on a pre-filled grid"
+msgstr "Loto Esh est une application de jeu de hasard. Le but du loto est d'obtenir un certain nombre de chiffres corrects sur une grille pré-remplie."
 
 #: components/home/about/About.tsx:54
 msgid "My links"
@@ -75,14 +163,56 @@ msgstr "Mon CV"
 msgid "or"
 msgstr "ou"
 
+#: components/home/projects/Projects.tsx:122
+msgid "Players buy game cards of 27 boxes divided into 3 lines of 9 boxes."
+msgstr "Les joueurs achètent des cartes de jeu de 27 cases réparties en 3 lignes de 9 cases."
+
+#: components/home/projects/ProjectModal.tsx:66
+msgid "Project Links"
+msgstr "Liens du projet"
+
 #. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:8
+msgid "experience.title"
+msgstr "Expérience"
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:9
 #: components/nav/SideBar.tsx:59
 msgid "projects.title"
 msgstr "Projets"
 
+#: components/home/projects/Projects.tsx:91
+msgid "Resto Master is an internal restaurant order and receipt manager."
+msgstr "Resto Master est un gestionnaire de commandes et de reçus, interne aux restaurants."
+
 #: components/home/contact/Contact.tsx:18
 msgid "Shoot me an email if you want to connect! You can also find me on"
 msgstr "Envoyez-moi un e-mail si vous voulez vous connecter ! Vous pouvez également me trouver sur"
+
+#: components/home/projects/Projects.tsx:64
+msgid "Teska booking is a booking application that allows travelers to book flights, hotels and rental cars in advance of their trip."
+msgstr "Teska booking est une application de réservations qui permet aux voyageurs de réserver des vols, des hôtels et des voitures de location, à l'avance avant leur voyage"
+
+#: components/home/projects/Projects.tsx:36
+msgid "The tech stack is based on top of pure React and Mui UI lib for the frontend."
+msgstr "La stack technologique est basée sur React et Mui UI lib pour le frontend."
+
+#: components/home/projects/Projects.tsx:139
+msgid "The winnings are proportional to the difficulty of the game mode"
+msgstr "Les gains sont proportionnels à la difficulté du mode de jeu."
+
+#: components/home/projects/Projects.tsx:127
+msgid "Three playing modes are possible: the quine, the double quine and the full card."
+msgstr "Trois modes de jeu sont possibles : la quine, la double quine et la carte pleine."
+
+#: components/home/projects/Projects.tsx:132
+msgid "To win in quine it is enough to have a complete line of good number selected from the abacus among one of the player's cards. In double quine it is necessary to have 2 complete line of good numbers. And finally in the full card mode the player must have all the boxes of the cardboard with the numbers drawn by the abacus"
+msgstr "Pour gagner en quine il suffit d'avoir une ligne complète de bons nombres sélectionnés sur le boulier parmi les cartons du joueur. En double quine il faut avoir 2 lignes complètes de bons nombres. Et enfin en mode cartons plein le joueur doit avoir toutes les cases du carton avec les nombres tirés par le boulier."
+
+#: components/home/projects/Projects.tsx:31
+msgid "Uptimise makes it easy to manage human resources, leave and absence requests, expense reports, benefits, payroll, employee data."
+msgstr "Uptimise facilite la gestion des ressources humaines, des demandes de congé et d'absence, des notes de frais, des avantages sociaux, de la paie et des données des employés."
 
 #: components/home/about/Stats.tsx:13
 msgid "Use at work"
@@ -90,4 +220,8 @@ msgstr "Utilisé en entreprise"
 
 #: components/home/about/Stats.tsx:32
 msgid "Use for fun"
-msgstr "Sur projets personnelle"
+msgstr "Sur mes projets"
+
+#: components/home/projects/Projects.tsx:101
+msgid "Waiters see the available tables in a restaurant, process the order for a table and send it to the kitchen. When the order has been served, the waiter can see the receipt for that order."
+msgstr "Les serveurs voient les tables disponibles dans un restaurant, traitent les commandes d'une table et l'envoient en cuisine. Lorsque la commande a été servie, le serveur peut voir le reçu de cette commande."

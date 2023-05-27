@@ -12,15 +12,15 @@ export const SectionHeader = ({ title, dir = "r" }: Props) => {
     <div className={styles.sectionHeader} style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }} >
       <div className={styles.line} />
       <h3>
-        <div style={{width: "max-content"}}>
+        <span style={{ width: "max-content", display:'block' }}>
           <Reveal>
-          <span className={styles.title}>
-            {title}
-            <span>.</span>
-          </span>
-        </Reveal>
-        </div>
-        
+            <span className={styles.title}>
+              {title}
+              <span>.</span>
+            </span>
+          </Reveal>
+        </span>
+
       </h3>
     </div>
   );

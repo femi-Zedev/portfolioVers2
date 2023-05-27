@@ -32,11 +32,11 @@ export const Stats = () => {
             <span><Trans>Use for fun</Trans></span>
           </h4>
           <div className={styles.statGrid}>
-            <span className="chip">Python</span>
             <span className="chip">Tailwind Css</span>
             <span className="chip">Mantine UI</span>
             <span className="chip">Figma</span>
             <span className="chip">Framer Motion</span>
+            <span className="chip">Webflow</span>
             <span className="chip">Supabase</span>
             <span className="chip">ContentFull</span>
             <span className="chip">CodeSandbox</span>

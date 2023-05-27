@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import { Trans } from "@lingui/macro";
 
 interface Props {
   isOpen: boolean;
@@ -62,7 +63,7 @@ export const ProjectModal = ({
 
           <div className={styles.modalFooter}>
             <p className={styles.linksText}>
-              Project Links<span>.</span>
+            <Trans>Project Links</Trans><span>.</span>
             </p>
             <div className={styles.links}>
               {code && 
@@ -70,7 +71,7 @@ export const ProjectModal = ({
                 <AiFillGithub /> source code
               </Link>}
               <Link target="_blank" rel="nofollow" href={projectLink}>
-                <AiOutlineExport /> live project
+                <AiOutlineExport /> <Trans id="live-project"> live project</Trans>
               </Link>
             </div>
           </div>

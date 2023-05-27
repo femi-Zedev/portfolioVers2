@@ -1,12 +1,14 @@
 import { Reveal } from "@/components/utils/Reveal";
 import styles from "./experience.module.scss";
+import { MessageDescriptor } from "@lingui/core";
+import { useLingui } from "@lingui/react";
 
 interface Props {
   title: string;
-  position: string;
+  position: MessageDescriptor;
   time: string;
   location: string;
-  description: string;
+  description: MessageDescriptor;
   tech: string[];
 }
 
@@ -18,6 +20,8 @@ export const ExperienceItem = ({
   description,
   tech,
 }: Props) => {
+  const { i18n } = useLingui();
+  
   return (
     <div className={styles.experience}>
       <div className={styles.heading}>
@@ -31,14 +35,14 @@ export const ExperienceItem = ({
 
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.position}>{position}</span>
+          <span className={styles.position}>{i18n._(position)}</span>
         </Reveal>
         <Reveal>
           <span>{location}</span>
         </Reveal>
       </div>
       <Reveal>
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>{i18n._(description)}</p>
       </Reveal>
       <Reveal>
         <div className={styles.tech}>

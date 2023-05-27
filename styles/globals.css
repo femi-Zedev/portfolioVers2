@@ -72,3 +72,8 @@ a {
   padding: 0.2rem 0.8rem;
   border-radius: 999px;
 }
+
+.externalLinks {
+  font-size: var(--text-sm);
+  color: var(--brand);
+}

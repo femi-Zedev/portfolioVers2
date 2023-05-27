@@ -1,16 +1,10 @@
 import { I18n, Messages } from '@lingui/core';
 
-export async function loadTranslation(locale: string, isProduction = true) {
-  let data
-  if (isProduction) {
-    data = await import(`./translations/locales/${locale}/messages`)
-  } else {
-    data = await import(
-      `@lingui/loader!./translations/locales/${locale}/messages.po`
-    )
-  }
-
-  return data.messages
+export async function loadTranslation(locale: string) {
+  const catalog = await import(
+    `@lingui/loader!./translations/locales/${locale}/messages.po`
+    );
+  return catalog.messages;
 }
 
 

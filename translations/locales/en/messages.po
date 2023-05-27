@@ -14,6 +14,59 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:19
+msgid "works.role_1"
+msgstr "Frontend Developer"
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:21
+#: components/home/experience/Experience.tsx:37
+#: components/home/experience/Experience.tsx:45
+msgid "countryName"
+msgstr "Benin Republic"
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:22
+msgid "desc.erugis"
+msgstr "I led the development of Uptimise SaaS web application modules in conjunction with the backend team. Uptimise is a human resources and payroll management software package. I integrated and developed the process of enrolling employees with their contracts and seniority. I then worked on the salary advance and vacation pay modules. I also developed Uptimise showcase website."
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:35
+#: components/home/experience/Experience.tsx:43
+msgid "works.role_2"
+msgstr "Angular Developer"
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:38
+msgid "desc.dialectai"
+msgstr "I took part in the development of a mobile application with Ionic. The application is a marketplace that connects customers and craftsmen. I also developed an end-to-end web application with Angular to train Dialectai's AI voice models."
+
+#. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:46
+msgid "desc.nautilus"
+msgstr "Build MyFeda mobile app UIs with NativeScript. Performed security tests on helped resolve bugs on Fedapay plugins"
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:27
+msgid "sumarry.uptimise"
+msgstr "Uptimise landing page. Uptimise is a SaaS web app for human resources and payroll management."
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:60
+msgid "summary.teska"
+msgstr "A booking app, where travelers can make reservations for flights, hotels and car rentals"
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:87
+msgid "summary.resto"
+msgstr "It is an internal restaurant order receipt manager for receipt generation and accounting automation"
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:113
+msgid "summary.loto"
+msgstr "A gambling app where players win by getting a certain amount of correct numbers on a pre-filled grid"
+
+#. js-lingui-explicit-id
 #: components/home/about/About.tsx:12
 #: components/nav/SideBar.tsx:49
 msgid "about.title"
@@ -24,8 +77,9 @@ msgstr "About"
 msgid "hero-cta"
 msgstr "Contact me"
 
-#~ msgid "experience-title"
-#~ msgstr "Experience"
+#: components/home/experience/Experience.tsx:19
+#~ msgid "Frontend dev"
+#~ msgstr "Frontend dev"
 
 #. js-lingui-explicit-id
 #: components/home/hero/Hero.tsx:13
@@ -36,6 +90,14 @@ msgstr "Hey, I'm Femi<0>.</0>"
 #: components/home/about/About.tsx:17
 msgid "about-text"
 msgstr "Hey! I'm Femi Arnaud AKOTONOU, for the full name. <0/>I'm  a young frontend developper with over 4 years of experience by now. I specialize in frontend development, mainly javascript stacks. I have good understanding of SQL and NoSQL databases, but I like to turn to SaaS solutions like Supabase or Firebase when it comes to design my backends"
+
+#: components/home/projects/Projects.tsx:47
+msgid "I enjoyed building this web site and working on the Saas app, I learned a lot about Human resources, payroll and employee's rights and obligations"
+msgstr "I enjoyed building this web site and working on the Saas app, I learned a lot about Human resources, payroll and employee's rights and obligations"
+
+#: components/home/projects/Projects.tsx:74
+msgid "I enjoyed working on this project where I learned about flight booking and its specificities."
+msgstr "I enjoyed working on this project where I learned about flight booking and its specificities."
 
 #: components/home/about/About.tsx:34
 msgid "I have experience with mobile development, with Ionic and NativeScript frameworks. I also had to collaborate on a React Native project in a short time. Last year I didn't spend much time on mobile development but I plan to get back to it with Flutter and ReactNative since they are the most popular frameworks on the market today."
@@ -58,9 +120,35 @@ msgstr "I'm passively looking for new positions where I can merge my love for co
 msgid "I've spent the last 4 years building and scaling software for some pretty cool companies. I'm also a great advocate of good user experience and good looking app screens 📱. that's why I help startups and individuals to come up with a prototype of their ideas with the help of figma. Let's connect!"
 msgstr "I've spent the last 4 years building and scaling software for some pretty cool companies. I'm also a great advocate of good user experience and good looking app screens 📱. that's why I help startups and individuals to come up with a prototype of their ideas with the help of figma. Let's connect!"
 
+#: components/home/projects/Projects.tsx:41
+msgid "I've worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+msgstr "I've worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+
 #: components/home/contact/Contact.tsx:31
 msgid "if that's more your speed."
 msgstr "if that's more your speed."
+
+#: components/home/projects/Projects.tsx:96
+msgid "In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period."
+msgstr "In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period."
+
+#: components/home/projects/Projects.tsx:69
+msgid "It is a project I contracted on comeUp. I worked on the frontend of the app, it was planned to use Duffel's API to manage flights with their billing."
+msgstr "It is a project I contracted on comeUp. I worked on the frontend of the app, it was planned to use Duffel's API to manage flights with their billing."
+
+#. js-lingui-explicit-id
+#: components/home/projects/Project.tsx:100
+msgid "more"
+msgstr "Learn more"
+
+#. js-lingui-explicit-id
+#: components/home/projects/ProjectModal.tsx:74
+msgid "live-project"
+msgstr "live project"
+
+#: components/home/projects/Projects.tsx:117
+msgid "Loto Esh is a gambling game app. Its goal is to get a certain number of correct numbers on a pre-filled grid"
+msgstr "Loto Esh is a gambling game app. Its goal is to get a certain number of correct numbers on a pre-filled grid"
 
 #: components/home/about/About.tsx:54
 msgid "My links"
@@ -75,14 +163,56 @@ msgstr "My resume"
 msgid "or"
 msgstr "or"
 
+#: components/home/projects/Projects.tsx:122
+msgid "Players buy game cards of 27 boxes divided into 3 lines of 9 boxes."
+msgstr "Players buy game cards of 27 boxes divided into 3 lines of 9 boxes."
+
+#: components/home/projects/ProjectModal.tsx:66
+msgid "Project Links"
+msgstr "Project Links"
+
 #. js-lingui-explicit-id
+#: components/home/experience/Experience.tsx:8
+msgid "experience.title"
+msgstr "Experience"
+
+#. js-lingui-explicit-id
+#: components/home/projects/Projects.tsx:9
 #: components/nav/SideBar.tsx:59
 msgid "projects.title"
 msgstr "Projects"
 
+#: components/home/projects/Projects.tsx:91
+msgid "Resto Master is an internal restaurant order and receipt manager."
+msgstr "Resto Master is an internal restaurant order and receipt manager."
+
 #: components/home/contact/Contact.tsx:18
 msgid "Shoot me an email if you want to connect! You can also find me on"
 msgstr "Shoot me an email if you want to connect! You can also find me on"
+
+#: components/home/projects/Projects.tsx:64
+msgid "Teska booking is a booking application that allows travelers to book flights, hotels and rental cars in advance of their trip."
+msgstr "Teska booking is a booking application that allows travelers to book flights, hotels and rental cars in advance of their trip."
+
+#: components/home/projects/Projects.tsx:36
+msgid "The tech stack is based on top of pure React and Mui UI lib for the frontend."
+msgstr "The tech stack is based on top of pure React and Mui UI lib for the frontend."
+
+#: components/home/projects/Projects.tsx:139
+msgid "The winnings are proportional to the difficulty of the game mode"
+msgstr "The winnings are proportional to the difficulty of the game mode"
+
+#: components/home/projects/Projects.tsx:127
+msgid "Three playing modes are possible: the quine, the double quine and the full card."
+msgstr "Three playing modes are possible: the quine, the double quine and the full card."
+
+#: components/home/projects/Projects.tsx:132
+msgid "To win in quine it is enough to have a complete line of good number selected from the abacus among one of the player's cards. In double quine it is necessary to have 2 complete line of good numbers. And finally in the full card mode the player must have all the boxes of the cardboard with the numbers drawn by the abacus"
+msgstr "To win in quine it is enough to have a complete line of good number selected from the abacus among one of the player's cards. In double quine it is necessary to have 2 complete line of good numbers. And finally in the full card mode the player must have all the boxes of the cardboard with the numbers drawn by the abacus"
+
+#: components/home/projects/Projects.tsx:31
+msgid "Uptimise makes it easy to manage human resources, leave and absence requests, expense reports, benefits, payroll, employee data."
+msgstr "Uptimise makes it easy to manage human resources, leave and absence requests, expense reports, benefits, payroll, employee data."
 
 #: components/home/about/Stats.tsx:13
 msgid "Use at work"
@@ -91,3 +221,7 @@ msgstr "Use at work"
 #: components/home/about/Stats.tsx:32
 msgid "Use for fun"
 msgstr "Use for fun"
+
+#: components/home/projects/Projects.tsx:101
+msgid "Waiters see the available tables in a restaurant, process the order for a table and send it to the kitchen. When the order has been served, the waiter can see the receipt for that order."
+msgstr "Waiters see the available tables in a restaurant, process the order for a table and send it to the kitchen. When the order has been served, the waiter can see the receipt for that order."

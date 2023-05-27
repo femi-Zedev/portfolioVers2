@@ -5,10 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
+import { MessageDescriptor } from "@lingui/core";
+import { useLingui } from "@lingui/react";
+import { Trans } from "@lingui/macro";
 
 interface Props {
   modalContent: JSX.Element;
-  description: string;
+  description: MessageDescriptor;
   projectLink: string;
   imgSrc: string;
   tech: string[];
@@ -25,14 +28,15 @@ export const Project = ({
   code,
   tech,
 }: Props) => {
-  const [hovered, setHovered] = useState(false);
 
+  const [hovered, setHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const controls = useAnimation();
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const { i18n } = useLingui();
 
   useEffect(() => {
     if (isInView) {
@@ -88,10 +92,14 @@ export const Project = ({
             <div className={styles.projectTech}>{tech.join(" - ")}</div>
           </Reveal>
           <Reveal>
-            <p className={styles.projectDescription}>
-              {description}{" "}
-              <span onClick={() => setIsOpen(true)}>Learn more {">"}</span>
-            </p>
+            <>
+              <p className={styles.projectDescription}>
+                {i18n._(description)}{" "}
+              </p>
+              <p className={styles.projectDescription}>
+                <span onClick={() => setIsOpen(true)}> <Trans id="more"> Learn more</Trans> {">"}</span>
+              </p>
+            </>
           </Reveal>
         </div>
       </motion.div>
