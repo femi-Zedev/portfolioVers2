@@ -28,7 +28,7 @@ msgstr "République du Bénin"
 #. js-lingui-explicit-id
 #: components/home/experience/Experience.tsx:22
 msgid "desc.erugis"
-msgstr "J'ai conduit le dévelopement des modules de l'application web Uptimise SaaS de concert avec l'équipe backend. Uptimise est un progiciel de gestion des ressources humaines et de la paie. J'ai intégré et développé le processus d'enrollement des employés avec leurs contrats et leur ancienneté. J'ai ensuite travaillé sur les modules d'avance sur salaire et de congés payés. J'ai également développé le site de présentation d'Uptimise."
+msgstr "J'ai conduit le dévelopement frontend des modules de l'application web Uptimise SaaS de concert avec l'équipe backend. Uptimise est un progiciel de gestion des ressources humaines et de la paie. J'ai intégré et développé, à partir de maquettes, le processus d'enrollement des employés avec leurs contrats et leur ancienneté. J'ai ensuite travaillé sur les modules d'avance sur salaire et de congés payés. J'ai également développé le site de présentation d'Uptimise."
 
 #. js-lingui-explicit-id
 #: components/home/experience/Experience.tsx:35
@@ -39,12 +39,12 @@ msgstr "Dévelopeur Angular"
 #. js-lingui-explicit-id
 #: components/home/experience/Experience.tsx:38
 msgid "desc.dialectai"
-msgstr "J'ai participé au développement d'une application mobile avec Ionic. L'application est une place de marché qui met en relation les clients et les artisans. J'ai également développé une application web de bout en bout avec Angular pour entraîner les modèles vocaux des IA de Dialectai."
+msgstr "J'ai dévelopé avec un sénior Full Stack dévelopeur Hotuba en utilisant le framework Ionic. Hotuba est une application mobile servant de place de marché  qui met en relation les artisants et ceux qui ont besoin de leurs services. J'ai également développé une application web de bout en bout avec Angular pour entraîner les modèles vocaux des IA de Dialectai."
 
 #. js-lingui-explicit-id
 #: components/home/experience/Experience.tsx:46
 msgid "desc.nautilus"
-msgstr "J'ai assuré l'intégration des UIs de l'application mobile MyFeda avec NativeScript. Réalisation de tests de sécurité et aide à la résolution de bugs sur les plugins Fedapay"
+msgstr "J'ai assuré l'intégration des UIs de l'application mobile MyFeda avec NativeScript. J'ai également réalisé des tests de sécurité et aidé à la résolution de bugs sur les plugins Fedapay"
 
 #. js-lingui-explicit-id
 #: components/home/projects/Projects.tsx:27
@@ -89,7 +89,7 @@ msgstr "Hello, Je m'appelle Femi"
 #. js-lingui-explicit-id
 #: components/home/about/About.tsx:17
 msgid "about-text"
-msgstr "A nouveau, Bienvue! Femi Arnaud AKOTONOU pour le nom complet. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 4 ans d'expérience. Ces dernières années je me suis consacré à développer avec les stacks de javascripts. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes backends"
+msgstr "A nouveau, bienvue ! Femi Arnaud AKOTONOU est mon nom complet. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 04 ans d'expérience. J'ai consacré ces dernières années à me perfectionner sur les stacks basées sur le Javascript. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes propre backends (histoire d'aller vite :)"
 
 #: components/home/projects/Projects.tsx:47
 msgid "I enjoyed building this web site and working on the Saas app, I learned a lot about Human resources, payroll and employee's rights and obligations"
@@ -101,7 +101,7 @@ msgstr "J'ai aimé travailler sur ce projet qui m'a permis d'en apprendre davant
 
 #: components/home/about/About.tsx:34
 msgid "I have experience with mobile development, with Ionic and NativeScript frameworks. I also had to collaborate on a React Native project in a short time. Last year I didn't spend much time on mobile development but I plan to get back to it with Flutter and ReactNative since they are the most popular frameworks on the market today."
-msgstr "J'ai de l'expérience dans le développement mobile, avec les frameworks Ionic et NativeScript. J'ai également eu à collaborer sur un projet React Native sur une courte période. Je prévois cette année de reprendre le développement mobile avec Flutter et ReactNative, car ce sont les frameworks les plus populaires sur le marché aujourd'hui."
+msgstr "J'ai de l'expérience dans le développement mobile, avec les frameworks Ionic et NativeScript. J'ai également eu à collaborer sur un projet React Native sur une courte période. Je prévois reprendre cette année le développement mobile avec Flutter et ReactNative, car ce sont les frameworks de dévelopement d'applications mobiles les plus en vogues sur le marché aujourd'hui."
 
 #. js-lingui-explicit-id
 #: components/home/hero/Hero.tsx:20
@@ -121,7 +121,7 @@ msgid "I've spent the last 4 years building and scaling software for some pretty
 msgstr "J'ai passé les 04 dernières années à développer et faire évoluer des applications pour des entreprise plutôt cool. 04 années riches d'expérience tant techniques, qu'humaines. Je suis également un fervant défenseur du User Experience sur les produits technologiques 📱. C'est d'ailleur pour cette raison que j'aide les startups et les particuliers à concevoir les UIs, le UX et les prototypes de leurs produits avec FIGMA. Prenons contact !"
 
 #: components/home/projects/Projects.tsx:41
-msgid "I've worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+msgid "I&apos;ve worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
 msgstr "J'ai travaillé sur un <0>simulateur</0> pour les entreprises ou les particuliers qui souhaitent évaluer les coûts liés à leurs employés."
 
 #: components/home/contact/Contact.tsx:31
@@ -129,8 +129,8 @@ msgid "if that's more your speed."
 msgstr "si cela vous convient plus"
 
 #: components/home/projects/Projects.tsx:96
-msgid "In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period."
-msgstr "Ainsi, les gérants, les serveurs et les comptables peuvent se connecter et consulter les recettes d'un restaurant pendant une période donnée."
+msgid "In this way, managers, waiters and accountants can log on and consult a restaurant&apos;s takings over a given period."
+msgstr "Ainsi, les gérants, les serveurs et les comptables peuvent se connecter et consulter les commandes reçue dans le restaurant pendant une période donnée."
 
 #: components/home/projects/Projects.tsx:69
 msgid "It is a project I contracted on comeUp. I worked on the frontend of the app, it was planned to use Duffel's API to manage flights with their billing."

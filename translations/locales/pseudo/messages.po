@@ -135,7 +135,7 @@ msgid "I've spent the last 4 years building and scaling software for some pretty
 msgstr ""
 
 #: components/home/projects/Projects.tsx:41
-msgid "I've worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+msgid "I&apos;ve worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
 msgstr ""
 
 #: components/home/contact/Contact.tsx:31
@@ -143,7 +143,7 @@ msgid "if that's more your speed."
 msgstr ""
 
 #: components/home/projects/Projects.tsx:96
-msgid "In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period."
+msgid "In this way, managers, waiters and accountants can log on and consult a restaurant&apos;s takings over a given period."
 msgstr ""
 
 #: components/home/projects/Projects.tsx:70

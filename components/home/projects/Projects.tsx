@@ -39,9 +39,8 @@ const projects = [
         </p>
         <p>
           <Trans>
-            I've worked on a <a href="https://uptimise.io/simulateur" target="_blank" rel="noreferrer" className="externalLinks">simulator</a> for companies or individuals who want to estimate how much their employees cost.
+            I&apos;ve worked on a <a href="https://uptimise.io/simulateur" target="_blank" rel="noreferrer" className="externalLinks">simulator</a> for companies or individuals who want to estimate how much their employees cost.
           </Trans>
-          {":)"}
         </p>
         <p>
           <Trans>
@@ -94,7 +93,7 @@ const projects = [
         </p>
         <p>
           <Trans>
-            In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period.
+            In this way, managers, waiters and accountants can log on and consult a restaurant&apos;s takings over a given period.
           </Trans>
         </p>
         <p>
