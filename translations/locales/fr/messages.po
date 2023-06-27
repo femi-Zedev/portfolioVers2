@@ -89,7 +89,7 @@ msgstr "Hello, Je m'appelle Femi"
 #. js-lingui-explicit-id
 #: components/home/about/About.tsx:17
 msgid "about-text"
-msgstr "A nouveau, bienvue ! Femi Arnaud AKOTONOU est mon nom complet. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 04 ans d'expérience. J'ai consacré ces dernières années à me perfectionner sur les stacks basées sur le Javascript. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes propre backends (histoire d'aller vite :)"
+msgstr "A nouveau, bienvenue ! Femi Arnaud AKOTONOU est mon nom complet. <0/>Je suis un jeune dévelopeur frontend avec maintenant un peu plus de 04 ans d'expérience. J'ai consacré ces dernières années à me perfectionner sur les stacks basées sur le Javascript. J'ai des connaissances en dévelopement backend, mais je préfère me tourner vers les solutions BaaS (Backend as a Service) tels que Supabase ou Firebase quand il s'agit de concevoir mes propre backends (histoire d'aller vite :)"
 
 #: components/home/projects/Projects.tsx:47
 msgid "I enjoyed building this web site and working on the Saas app, I learned a lot about Human resources, payroll and employee's rights and obligations"

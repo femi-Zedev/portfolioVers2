@@ -2,7 +2,7 @@ import styles from "./heading.module.scss";
 import { MyLinks } from "./components/MyLinks";
 import { OutlineButton } from "../buttons/OutlineButton";
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { t } from '@lingui/macro'
 import { Trans } from '@lingui/macro'
 
@@ -10,15 +10,17 @@ type LOCALES = 'en' | 'fr' | 'pseudo'
 
 export const Heading = () => {
   const router = useRouter()
-  const [locale, setLocale] = useState<LOCALES>(
-    router.locale!.split('-')[0] as LOCALES
-  )
+  const [locale, setLocale] = useState<LOCALES>( router.locale!.split('-')[0] as LOCALES )
+
+  useEffect(() => {
+    router.push(router.pathname, router.pathname, { locale })
+  }, [locale])
+  
 
  
 
-  function handleLangChange() {
+  function handleLangChange() {  
     locale == 'en' ? setLocale('fr') : setLocale('en')
-    router.push(router.pathname, router.pathname, { locale })
   }
 
   function openResumeViewer(){

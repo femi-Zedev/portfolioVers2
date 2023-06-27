@@ -38,7 +38,7 @@ export const Stats = () => {
             <span className="chip">Framer Motion</span>
             <span className="chip">Webflow</span>
             <span className="chip">Supabase</span>
-            <span className="chip">ContentFull</span>
+            <span className="chip">Contentful</span>
             <span className="chip">CodeSandbox</span>
             <span className="chip">Vercel</span>
             <span className="chip">Netlify</span>
