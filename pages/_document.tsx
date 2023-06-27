@@ -6,6 +6,7 @@ export default function Document() {
       <Head>
         <title>Femi </title>
         <meta charSet="utf-8"/>
+        <meta name="google-site-verification" content="XjjGg1wH-mQBt186CmOXy-kpQGFhwAF2bLsqtMq3eps" />
         <meta name="robots" content="index,follow" />
         <meta name="description" content="Hey, I'm Femi AKOTONOU. I'm a young frontend developper with over 4 years of experience by now.  I've spent the last few years perfecting my knowledge of Javascript-based stacks and building pretty cool solutions for companies as well as individuals." />
         <meta name="twitter:card" content="summary_large_image"/>
