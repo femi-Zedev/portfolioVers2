@@ -30,19 +30,6 @@ export default function App({ Component, pageProps }: AppProps) {
   
   return (
     <div id="root">
-       <Head>
-        <title>Femi | Web Developer</title>
-        <meta name="description" content="Bleep boop" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        {/* {router.locales!.concat('x-default').map((locale: string) => {
-          const localePath = locale === 'x-default' ? '' : `${locale}`
-          const href = `https://femidev.vercel.app//${localePath}${router.asPath}`
-          return locale === 'pseudo' ? null : (
-            <link key={locale} rel="alternate" hrefLang={locale} href={href} />
-          )
-        })} */}
-      </Head>
       <I18nProvider i18n={i18n}>
         <Component {...pageProps} />
       </I18nProvider>
