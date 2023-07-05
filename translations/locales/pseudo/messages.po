@@ -14,35 +14,35 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:19
+#: components/home/experience/Experience.tsx:12
 msgid "works.role_1"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:21
-#: components/home/experience/Experience.tsx:37
-#: components/home/experience/Experience.tsx:45
+#: components/home/experience/Experience.tsx:14
+#: components/home/experience/Experience.tsx:30
+#: components/home/experience/Experience.tsx:38
 msgid "countryName"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:22
+#: components/home/experience/Experience.tsx:15
 msgid "desc.erugis"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:35
-#: components/home/experience/Experience.tsx:43
+#: components/home/experience/Experience.tsx:28
+#: components/home/experience/Experience.tsx:36
 msgid "works.role_2"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:38
+#: components/home/experience/Experience.tsx:31
 msgid "desc.dialectai"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:46
+#: components/home/experience/Experience.tsx:39
 msgid "desc.nautilus"
 msgstr ""
 
@@ -52,17 +52,17 @@ msgid "sumarry.uptimise"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/projects/Projects.tsx:60
+#: components/home/projects/Projects.tsx:59
 msgid "summary.teska"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/projects/Projects.tsx:87
+#: components/home/projects/Projects.tsx:86
 msgid "summary.resto"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/projects/Projects.tsx:113
+#: components/home/projects/Projects.tsx:112
 msgid "summary.loto"
 msgstr ""
 
@@ -78,7 +78,8 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: components/home/about/About.tsx:12
-#: components/nav/SideBar.tsx:49
+#: components/nav/Heading.tsx:98
+#: components/nav/SideBar.tsx:40
 msgid "about.title"
 msgstr ""
 
@@ -101,11 +102,11 @@ msgstr ""
 msgid "about-text"
 msgstr ""
 
-#: components/home/projects/Projects.tsx:47
+#: components/home/projects/Projects.tsx:46
 msgid "I enjoyed building this web site and working on the Saas app, I learned a lot about Human resources, payroll and employee's rights and obligations"
 msgstr ""
 
-#: components/home/projects/Projects.tsx:74
+#: components/home/projects/Projects.tsx:73
 msgid "I enjoyed working on this project where I learned about flight booking and its specificities."
 msgstr ""
 
@@ -123,7 +124,7 @@ msgid "hero-role"
 msgstr ""
 
 #: components/home/about/About.tsx:27
-msgid "I'm currently working in freelance on <0>Comup.com</0>. <1/> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React"
+msgid "I'm currently working in freelance on <0>ComeUp.com</0>. <1/> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React"
 msgstr ""
 
 #: components/home/about/About.tsx:43
@@ -135,22 +136,30 @@ msgid "I've spent the last 4 years building and scaling software for some pretty
 msgstr ""
 
 #: components/home/projects/Projects.tsx:41
-msgid "I&apos;ve worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+msgid "I've worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
 msgstr ""
+
+#: components/home/projects/Projects.tsx:41
+#~ msgid "I&apos;ve worked on a <0>simulator</0> for companies or individuals who want to estimate how much their employees cost."
+#~ msgstr ""
 
 #: components/home/contact/Contact.tsx:31
 msgid "if that's more your speed."
 msgstr ""
 
-#: components/home/projects/Projects.tsx:96
-msgid "In this way, managers, waiters and accountants can log on and consult a restaurant&apos;s takings over a given period."
+#: components/home/projects/Projects.tsx:95
+msgid "In this way, managers, waiters and accountants can log on and consult a restaurant's takings over a given period."
 msgstr ""
+
+#: components/home/projects/Projects.tsx:96
+#~ msgid "In this way, managers, waiters and accountants can log on and consult a restaurant&apos;s takings over a given period."
+#~ msgstr ""
 
 #: components/home/projects/Projects.tsx:70
 #~ msgid "It is a project I contracted on comeUp. I work on the frontend of the app, it was planned to use Duffel's API to manage flights with their billing."
 #~ msgstr ""
 
-#: components/home/projects/Projects.tsx:69
+#: components/home/projects/Projects.tsx:68
 msgid "It is a project I contracted on comeUp. I worked on the frontend of the app, it was planned to use Duffel's API to manage flights with their billing."
 msgstr ""
 
@@ -164,7 +173,7 @@ msgstr ""
 msgid "live-project"
 msgstr ""
 
-#: components/home/projects/Projects.tsx:117
+#: components/home/projects/Projects.tsx:116
 msgid "Loto Esh is a gambling game app. Its goal is to get a certain number of correct numbers on a pre-filled grid"
 msgstr ""
 
@@ -173,7 +182,7 @@ msgid "My links"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/nav/Heading.tsx:33
+#: components/nav/Heading.tsx:84
 msgid "heading-resume-btn"
 msgstr ""
 
@@ -181,7 +190,7 @@ msgstr ""
 msgid "or"
 msgstr ""
 
-#: components/home/projects/Projects.tsx:122
+#: components/home/projects/Projects.tsx:121
 msgid "Players buy game cards of 27 boxes divided into 3 lines of 9 boxes."
 msgstr ""
 
@@ -190,17 +199,18 @@ msgid "Project Links"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: components/home/experience/Experience.tsx:8
+#: components/home/experience/Experience.tsx:45
 msgid "experience.title"
 msgstr ""
 
 #. js-lingui-explicit-id
 #: components/home/projects/Projects.tsx:9
-#: components/nav/SideBar.tsx:59
+#: components/nav/Heading.tsx:102
+#: components/nav/SideBar.tsx:43
 msgid "projects.title"
 msgstr ""
 
-#: components/home/projects/Projects.tsx:91
+#: components/home/projects/Projects.tsx:90
 msgid "Resto Master is an internal restaurant order and receipt manager."
 msgstr ""
 
@@ -212,7 +222,7 @@ msgstr ""
 #~ msgid "So managers, waiters, accountants can login and see receipts of a restaurant for a period"
 #~ msgstr ""
 
-#: components/home/projects/Projects.tsx:64
+#: components/home/projects/Projects.tsx:63
 msgid "Teska booking is a booking application that allows travelers to book flights, hotels and rental cars in advance of their trip."
 msgstr ""
 
@@ -224,7 +234,7 @@ msgstr ""
 msgid "The tech stack is based on top of pure React and Mui UI lib for the frontend."
 msgstr ""
 
-#: components/home/projects/Projects.tsx:139
+#: components/home/projects/Projects.tsx:138
 msgid "The winnings are proportional to the difficulty of the game mode"
 msgstr ""
 
@@ -236,11 +246,11 @@ msgstr ""
 #~ msgid "There is a simulator for companies or individuals who want to estimate how much their employees cost"
 #~ msgstr ""
 
-#: components/home/projects/Projects.tsx:127
+#: components/home/projects/Projects.tsx:126
 msgid "Three playing modes are possible: the quine, the double quine and the full card."
 msgstr ""
 
-#: components/home/projects/Projects.tsx:132
+#: components/home/projects/Projects.tsx:131
 msgid "To win in quine it is enough to have a complete line of good number selected from the abacus among one of the player's cards. In double quine it is necessary to have 2 complete line of good numbers. And finally in the full card mode the player must have all the boxes of the cardboard with the numbers drawn by the abacus"
 msgstr ""
 
@@ -260,6 +270,6 @@ msgstr ""
 #~ msgid "Waiters see the available tables in a restaurant, decide to process a table's order and send it to the kitchen and when it been served , he can see the receipt for this order"
 #~ msgstr ""
 
-#: components/home/projects/Projects.tsx:101
+#: components/home/projects/Projects.tsx:100
 msgid "Waiters see the available tables in a restaurant, process the order for a table and send it to the kitchen. When the order has been served, the waiter can see the receipt for that order."
 msgstr ""

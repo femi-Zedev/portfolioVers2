@@ -2,13 +2,13 @@ import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react'
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Poppins } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 import { activateLocale } from '@/utils';
-import Head from 'next/head';
+import { RecoilRoot, atom, useRecoilState } from 'recoil';
 
-// const poppins = Poppins({ weight: ["100", "200", "400", "700", "900"] });
+
+
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -27,12 +27,14 @@ export default function App({ Component, pageProps }: AppProps) {
       activateLocale(i18n, locale, pageProps.translation)
     }
   }, [locale, pageProps.translation])
-  
+
   return (
     <div id="root">
-      <I18nProvider i18n={i18n}>
-        <Component {...pageProps} />
-      </I18nProvider>
+      <RecoilRoot>
+        <I18nProvider i18n={i18n}>
+          <Component {...pageProps} />
+        </I18nProvider>
+      </RecoilRoot>
     </div>
   );
 }

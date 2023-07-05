@@ -3,13 +3,12 @@ import { MyLinks } from "./components/MyLinks";
 import { OutlineButton } from "../buttons/OutlineButton";
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { t } from '@lingui/macro'
 import { Trans } from '@lingui/macro'
 import useBreakpoint from "@/hooks/useBreakpoint";
-import { AnimatePresence, easeIn, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 
-type LOCALES = 'en' | 'fr' | 'pseudo'
+export type LOCALES = 'en' | 'fr' | 'pseudo'
 
 export const Heading = () => {
   const router = useRouter()
