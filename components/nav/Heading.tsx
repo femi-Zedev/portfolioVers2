@@ -37,6 +37,11 @@ export const Heading = () => {
     sections.forEach((section) => observer.observe(section));
   }, []);
 
+  function handleMenuClick(menu: string) {
+    setSelected(menu)
+    setMenuOpen(false)
+  }
+
 
 
   useEffect(() => {
@@ -93,21 +98,25 @@ export const Heading = () => {
 
           <motion.nav initial={{ height: 0 }} animate={{ height: 'auto' }} exit={{ height: 0 }} transition={{ duration: 0.5 }} className={styles.sideBar} >
 
-            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity:0 }} href="#about" onClick={() => { setSelected("about") }} className={selected === "about" ? styles.selected : ""}>
+            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#about" onClick={() => { handleMenuClick("about") }} className={selected === "about" ? styles.selected : ""}>
               <Trans id="about.title">About</Trans>
             </motion.a>
 
-            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity:0 }} href="#projects" onClick={() => setSelected("projects")} className={selected === "projects" ? styles.selected : ""}>
+            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#projects" onClick={() => handleMenuClick("projects")} className={selected === "projects" ? styles.selected : ""}>
               <Trans id="projects.title">Projects</Trans>
             </motion.a>
 
-            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity:0 }} href="#experience" onClick={() => setSelected("experience")} className={selected === "experience" ? styles.selected : ""}>
+            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#experience" onClick={() => handleMenuClick("experience")} className={selected === "experience" ? styles.selected : ""}>
               Exp.
             </motion.a>
 
-            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity:0 }} href="#contact" onClick={() => setSelected("contact")} className={selected === "contact" ? styles.selected : ""}>
+            <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#contact" onClick={() => handleMenuClick("contact")} className={selected === "contact" ? styles.selected : ""}>
               Contact
             </motion.a>
+
+            <motion.button initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} className={styles.switcherButton} onClick={openResumeViewer}>
+              <Trans id="heading-resume-btn">My resume</Trans>
+            </motion.button>
 
           </motion.nav>
         }

@@ -21,14 +21,14 @@ export const About = () => {
               </Trans>
             </p>
           </Reveal>
-          <Reveal>
+          {/* <Reveal>
 
             <p className={styles.aboutText} >
               <Trans>
                 I&apos;m currently working in freelance on <a href="https://comeup.com/@arnaudakotonou" target="_blank" rel="noreferrer" className="externalLinks">ComeUp.com</a>. <br /> I mainly help individuals and startups in the design of their UIs and I also help them build their web apps with React
               </Trans>
             </p>
-          </Reveal>
+          </Reveal> */}
           <Reveal>
             <p className={styles.aboutText}>
               <Trans>

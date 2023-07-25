@@ -18,10 +18,11 @@ export const Stats = () => {
             <span className="chip">Python</span>            
             <span className="chip">NextJs</span>
             <span className="chip">Mui</span>
+            <span className="chip">Tailwind Css</span>
             <span className="chip">Redux</span>
             <span className="chip">NodeJS</span>
             <span className="chip">MongoDB</span>
-            <span className="chip">GitHub</span>
+            <span className="chip">GitLab</span>
           </div>
         </div>
       </Reveal>
@@ -32,13 +33,13 @@ export const Stats = () => {
             <span><Trans>Use for fun</Trans></span>
           </h4>
           <div className={styles.statGrid}>
-            <span className="chip">Tailwind Css</span>
             <span className="chip">Mantine UI</span>
             <span className="chip">Figma</span>
             <span className="chip">Framer Motion</span>
             <span className="chip">Webflow</span>
             <span className="chip">Supabase</span>
             <span className="chip">Contentful</span>
+            <span className="chip">GitHub</span>
             <span className="chip">CodeSandbox</span>
             <span className="chip">Vercel</span>
             <span className="chip">Netlify</span>
