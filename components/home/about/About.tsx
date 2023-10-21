@@ -38,7 +38,7 @@ export const About = () => {
               </Trans>
             </p>
           </Reveal>
-          <Reveal>
+          {/* <Reveal>
             <p className={styles.aboutText}>
               <Trans>
                 I&apos;m passively looking for new positions where I can merge my
@@ -47,7 +47,7 @@ export const About = () => {
                 🔗
               </Trans>
             </p>
-          </Reveal>
+          </Reveal> */}
           <Reveal>
             <div className={styles.links}>
               <div className={styles.linksText}>
