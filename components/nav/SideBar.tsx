@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
-import { Trans, t } from '@lingui/macro'
 import useBreakpoint from "@/hooks/useBreakpoint";
 
 export const SideBar = () => {
@@ -37,10 +36,10 @@ export const SideBar = () => {
           <motion.nav initial={{ x: -70 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} className={styles.sideBar} >
             <span className={styles.logo}> F<span>.</span> </span>
             <motion.a initial={{ x: -70 }} animate={{ x: 0 }} transition={{ duration: 0.5, delay: 0.1 }} href="#about" onClick={() => { setSelected("about") }} className={selected === "about" ? styles.selected : ""}>
-              <Trans id="about.title">About</Trans>
+              A propos
             </motion.a>
             <motion.a initial={{ x: -70 }} animate={{ x: 0 }} transition={{ duration: 0.5, delay: 0.2 }} href="#projects" onClick={() => setSelected("projects")} className={selected === "projects" ? styles.selected : ""}>
-              <Trans id="projects.title">Projects</Trans>
+              Projets
             </motion.a>
             <motion.a initial={{ x: -70 }} animate={{ x: 0 }} transition={{ duration: 0.5, delay: 0.3 }} href="#experience" onClick={() => setSelected("experience")} className={selected === "experience" ? styles.selected : ""}>
               Exp.

@@ -2,7 +2,6 @@ import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
-import { Trans } from '@lingui/macro'
 
 export const Hero = () => {
   return (
@@ -10,29 +9,24 @@ export const Hero = () => {
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-            <Trans id="hero-hi">
-            Hey, I&apos;m Femi<span>.</span>
-            </Trans>
+          Hello, Je m'appelle Femi
           </h1>
         </Reveal>
         <Reveal>
           <h2 className={styles.subTitle}>
-          <Trans id="hero-role">I&apos;m a <span>Frontend Developer</span></Trans>  
+          Je suis Dévelopeur Frontend
           </h2>
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-          <Trans id="">
-             I&apos;ve spent the last 4 years building and scaling software for
-            some pretty cool companies. I&apos;m also a great advocate of good user experience and good looking app screens 📱.
-            that&apos;s why I help startups and individuals to come up with a prototype of their ideas with the help of figma.
-            Let&apos;s connect!
-          </Trans>
+          J'ai passé les 04 dernières années à développer et faire évoluer des applications pour des entreprise plutôt cool. 
+          04 années riches d'expérience tant techniques, qu'humaines. Je suis également un fervant défenseur du User Experience sur les produits technologiques 📱. 
+          C'est d'ailleur pour cette raison que j'aide les startups et les particuliers à concevoir les UIs, le UX et les prototypes de leurs produits avec FIGMA. Prenons contact !
           </p>
         </Reveal>
         <Reveal>
           <StandardButton onClick={() => document.getElementById("contact")?.scrollIntoView()}>
-            <Trans id="hero-cta">Contact me</Trans>
+            Prenons contact
           </StandardButton>
         </Reveal>
       </div>

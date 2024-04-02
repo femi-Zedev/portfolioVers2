@@ -1,17 +1,22 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { i18n } from '@lingui/core';
 
 export default function Document() {
-  const locale = i18n.locale
+  // const locale = i18n.locale
   
-  let meta = locale == 'en' ? 
-   { 
-    desc: "Hey, I'm Femi AKOTONOU. I'm a Frontend Developer and a UX Designer",
-    siteName: 'Femi Dev. | FrontEnd developer',
-    ogImg: 'https://femidev.com/femi.PNG'
-  }
-  :
-  { 
+  // let meta = locale == 'en' ? 
+  //  { 
+  //   desc: "Hey, I'm Femi AKOTONOU. I'm a Frontend Developer and a UX Designer",
+  //   siteName: 'Femi Dev. | FrontEnd developer',
+  //   ogImg: 'https://femidev.com/femi.PNG'
+  // }
+  // :
+  // { 
+  //   desc: "Hello, Je suis Femi AKOTONOU, dévelopeur frontend et UX Designer",
+  //   siteName: 'Femi Dev. | Developeur frontend',
+  //   ogImg: 'https://femidev.com/femi_fr.PNG'
+  // }
+
+  let meta =   { 
     desc: "Hello, Je suis Femi AKOTONOU, dévelopeur frontend et UX Designer",
     siteName: 'Femi Dev. | Developeur frontend',
     ogImg: 'https://femidev.com/femi_fr.PNG'

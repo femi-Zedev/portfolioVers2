@@ -3,7 +3,6 @@ import { MyLinks } from "./components/MyLinks";
 import { OutlineButton } from "../buttons/OutlineButton";
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { Trans } from '@lingui/macro'
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -85,7 +84,7 @@ export const Heading = () => {
           {
             !(breakpoint == 'sm' || breakpoint == 'xs') &&
             <OutlineButton onClick={openResumeViewer}>
-              <Trans id="heading-resume-btn">My resume</Trans>
+              Mon CV
             </OutlineButton>
           }
         </div>
@@ -99,11 +98,11 @@ export const Heading = () => {
           <motion.nav initial={{ height: 0 }} animate={{ height: 'auto' }} exit={{ height: 0 }} transition={{ duration: 0.5 }} className={styles.sideBar} >
 
             <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#about" onClick={() => { handleMenuClick("about") }} className={selected === "about" ? styles.selected : ""}>
-              <Trans id="about.title">About</Trans>
+              A propos
             </motion.a>
 
             <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#projects" onClick={() => handleMenuClick("projects")} className={selected === "projects" ? styles.selected : ""}>
-              <Trans id="projects.title">Projects</Trans>
+              Projets
             </motion.a>
 
             <motion.a initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} href="#experience" onClick={() => handleMenuClick("experience")} className={selected === "experience" ? styles.selected : ""}>
@@ -115,7 +114,7 @@ export const Heading = () => {
             </motion.a>
 
             <motion.button initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} className={styles.switcherButton} onClick={openResumeViewer}>
-              <Trans id="heading-resume-btn">My resume</Trans>
+              Mon cv
             </motion.button>
 
           </motion.nav>
