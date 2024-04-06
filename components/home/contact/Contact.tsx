@@ -2,34 +2,32 @@ import { Reveal } from "@/components/utils/Reveal";
 import styles from "./contact.module.scss";
 import { AiFillMail } from "react-icons/ai";
 import Link from "next/link";
+import { ContactSection } from "@/interfaces/hygraph.interface";
+import { RichText } from "@graphcms/rich-text-react-renderer";
 
-export const Contact = () => {
+export const Contact = ({ contactSection }: { contactSection: ContactSection | null }) => {
+  if (!contactSection) {
+    return <div>Loading...</div>;
+  }
   return (
     <section className="section-wrapper" id="contact">
       <div className={styles.contactWrapper}>
         <Reveal width="100%">
           <h4 className={styles.contactTitle}>
-            Contact<span>.</span>
+            {contactSection?.title}<span>.</span>
           </h4>
         </Reveal>
+
         <Reveal width="100%">
-          <p className={styles.contactCopy}>
-          Envoyez-moi un e-mail si vous voulez qu'on discute d'une opportunité !  Vous pouvez également me contacter sur{' '}
-            
-            <Link
-              href="https://www.linkedin.com/in/femi-akotonou-3b8882183/"
-              target="_blank"
-              rel="nofollow"
-            >
-              Linkedin
-            </Link>
-            {" "}ou{" "}
-            <Link href="https://discordapp.com/users/femi_akt#6685" target="_blank" rel="nofollow">
-              Discord
-            </Link>
-            
-          </p>
+          <RichText content={contactSection.contactMeParagraph.raw}
+            renderers={{
+              p: ({ children }) => (
+                <p className={`${styles.contactCopy}`}>
+                  {children}
+                </p>)
+            }} />
         </Reveal>
+
         <Reveal width="100%">
           <Link href="mailto:akotonouarnaudfemi@gmail.com">
             <div className={styles.contactEmail}>

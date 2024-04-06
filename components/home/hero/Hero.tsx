@@ -2,31 +2,44 @@ import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
+import { RichText } from '@graphcms/rich-text-react-renderer';
+import { IntroSection } from "@/interfaces/hygraph.interface";
+import { SectionHeader } from "@/components/utils/SectionHeader";
 
-export const Hero = () => {
+export const Hero = ({ introSection }: { introSection: IntroSection | null }) => {
+  if (!introSection) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <section className={`section-wrapper ${styles.hero}`}>
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-          Hello, Je m'appelle Femi
+            {introSection.title}
           </h1>
         </Reveal>
         <Reveal>
-          <h2 className={styles.subTitle}>
-          Je suis Dévelopeur Frontend
-          </h2>
+          <RichText content={introSection.careerRole.raw}
+            renderers={{
+              h1: ({ children }) => (
+                <h1 className={styles.subTitle}>
+                  {children}
+                </h1>)
+            }} />
         </Reveal>
         <Reveal>
-          <p className={styles.aboutCopy}>
-          J'ai passé les 04 dernières années à développer et faire évoluer des applications pour des entreprise plutôt cool. 
-          04 années riches d'expérience tant techniques, qu'humaines. Je suis également un fervant défenseur du User Experience sur les produits technologiques 📱. 
-          C'est d'ailleur pour cette raison que j'aide les startups et les particuliers à concevoir les UIs, le UX et les prototypes de leurs produits avec FIGMA. Prenons contact !
-          </p>
+          <RichText content={introSection.introParagraph.raw}
+            renderers={{
+              p: ({ children }) => (
+                <p className={styles.aboutCopy}>
+                  {children}
+                </p>)
+            }} />
         </Reveal>
         <Reveal>
           <StandardButton onClick={() => document.getElementById("contact")?.scrollIntoView()}>
-            Prenons contact
+            {introSection.contact_me.label}
           </StandardButton>
         </Reveal>
       </div>
