@@ -3,13 +3,107 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import Head from "next/head";
 import { getHomePage } from "@/services/index"
 import { Page } from "@/interfaces/hygraph.interface";
+import { GraphQLClient, gql } from "graphql-request";
 
 interface Props {
   pages: Page[];
 }
+// const hygraph_endpoint = process.env.HYGRAPH_API
+interface GraphClientResponse {
+  pages: Page
+}
 
+const graphQLClient = new GraphQLClient("https://eu-west-2.cdn.hygraph.com/content/cluhhe6ol2j2207vxwns363fd/master"!);
+const query = gql`
+query MyQuery {
+  pages {
+    meta {
+      title,
+      desc,
+      siteName,
+      ogSiteName,
+      ogDesc,
+       __typename
+    }
+    navBar {
+      logo {
+        url
+      }
+      ctas {
+        label
+        link
+      }
+    }
+    dynamicZone {
+      ... on IntroSection {
+        __typename
+        title
+        careerRole {
+          raw
+        }
+        introParagraph {
+          raw
+        }
+        contact_me {
+          label
+          link
+        }
+      }
+      ... on AboutSection {
+        __typename
+        title
+        aboutParagraph {
+          raw
+        }
+        useFullLinks
+        usedStacks {
+          title,
+          stack
+        }
+      }
+      ... on ProjectSection {
+        __typename
+        title,
+        projectItems {
+          name,
+          summary{
+            raw
+          },
+          fullDescription{
+            raw
+          },
+          projectBanner{
+            url
+          }
+          githubLink,
+          demoLink,
+          techStack,
+        }
+      }
+      ... on ExperienceSection {
+        __typename
+        title,
+        experienceItems{
+          companyName,
+          role,
+          period
+          roleDescription,
+          techSkills,
+        }
+      }
+      ... on ContactSection {
+        __typename
+        title
+        contactMeParagraph {
+          raw
+        }
+      }
+    }
+  }
+}
+`
 export const getStaticProps = async () => {
-  const { pages } = await getHomePage();
+  const { pages } = await graphQLClient.request(query) as unknown as  GraphClientResponse;
 
   return {
     props: {

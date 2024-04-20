@@ -2,7 +2,7 @@
 import { Page } from "@/interfaces/hygraph.interface";
 import { GraphQLClient, gql } from "graphql-request";
 
-const hygraph_endpoint = process.env.NEXT_PUBLIC_HYGRAPH_API
+const hygraph_endpoint = process.env.HYGRAPH_API
 
 const graphQLClient = new GraphQLClient(hygraph_endpoint!);
 interface GraphClientResponse {
