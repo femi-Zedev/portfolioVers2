@@ -80,13 +80,13 @@ export const Heading = () => {
           <button className={styles.switcherButton} onClick={handleLangChange}>
             {locale}
           </button> */}
-
+{/* 
           {
             !(breakpoint == 'sm' || breakpoint == 'xs') &&
             <OutlineButton onClick={openResumeViewer}>
               Mon CV
             </OutlineButton>
-          }
+          } */}
         </div>
       </div>
 
@@ -113,9 +113,9 @@ export const Heading = () => {
               Contact
             </motion.a>
 
-            <motion.button initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} className={styles.switcherButton} onClick={openResumeViewer}>
+            {/* <motion.button initial={{ x: -70, y: 0 }} animate={{ x: 0, y: 0 }} exit={{ x: -70, y: 0, opacity: 0 }} className={styles.switcherButton} onClick={openResumeViewer}>
               Mon cv
-            </motion.button>
+            </motion.button> */}
 
           </motion.nav>
         }

@@ -12,7 +12,7 @@ import { AboutSection, ContactSection, ExperienceSection, IntroSection, Page, Pr
 
 
 export const Home = ({pageData}:{pageData: Page}) => {
-  console.log(pageData)
+  
   function getDynamicSection(dynamicData: Page['dynamicZone'], __typename: string)  {
     const section = dynamicData.find(section => section.__typename === __typename);
     return section || null;

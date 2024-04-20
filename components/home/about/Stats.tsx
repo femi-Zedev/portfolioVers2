@@ -9,8 +9,8 @@ export const Stats = ({ usedStacks }: { usedStacks: AboutSection['usedStacks'] }
       <Reveal>
         <div className={styles.statColumn}>
 
-          {usedStacks.map((item) => (
-            <>
+          {usedStacks.map((item, i) => (
+            <span key={i}>
               <h4 key={item.title}>
                 <AiFillCode size="2.4rem" color="var(--brand)" />
                 <span>{item.title}</span>
@@ -20,7 +20,7 @@ export const Stats = ({ usedStacks }: { usedStacks: AboutSection['usedStacks'] }
                   <span key={subItem} className="chip">{subItem}</span>
                 ))}
               </div>
-            </>
+            </span>
           ))}
 
         </div>
