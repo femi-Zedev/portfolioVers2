@@ -9,7 +9,7 @@ export default function Document() {
   }
 
   return (
-    <Html >
+    <Html lang="fr">
       <Head>
        
       </Head>
