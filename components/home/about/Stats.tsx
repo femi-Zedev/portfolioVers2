@@ -1,51 +1,31 @@
 import styles from "./stats.module.scss";
 import { AiFillCode, AiFillSmile } from "react-icons/ai";
 import { Reveal } from "@/components/utils/Reveal";
-import { Trans } from "@lingui/macro";
+import { AboutSection } from "@/interfaces/hygraph.interface";
 
-export const Stats = () => {
+export const Stats = ({ usedStacks }: { usedStacks: AboutSection['usedStacks'] }) => {
   return (
     <div className={styles.stats}>
       <Reveal>
         <div className={styles.statColumn}>
-          <h4>
-            <AiFillCode size="2.4rem" color="var(--brand)" />
-            <span><Trans>Use at work</Trans></span>
-          </h4>
-          <div className={styles.statGrid}>
-            <span className="chip">JavaScript</span>
-            <span className="chip">TypeScript</span>
-            <span className="chip">Python</span>            
-            <span className="chip">NextJs</span>
-            <span className="chip">Mui</span>
-            <span className="chip">Tailwind Css</span>
-            <span className="chip">Redux</span>
-            <span className="chip">NodeJS</span>
-            <span className="chip">MongoDB</span>
-            <span className="chip">GitLab</span>
-          </div>
+
+          {usedStacks.map((item, i) => (
+            <span key={i}>
+              <h4 key={item.title}>
+                <AiFillCode size="2.4rem" color="var(--brand)" />
+                <span>{item.title}</span>
+              </h4>
+              <div className={styles.statGrid}>
+                {item.stack.map((subItem) => (
+                  <span key={subItem} className="chip">{subItem}</span>
+                ))}
+              </div>
+            </span>
+          ))}
+
         </div>
       </Reveal>
-      <Reveal>
-        <div className={styles.statColumn}>
-          <h4>
-            <AiFillSmile size="2.4rem" color="var(--brand)" />
-            <span><Trans>Use for fun</Trans></span>
-          </h4>
-          <div className={styles.statGrid}>
-            <span className="chip">Mantine UI</span>
-            <span className="chip">Figma</span>
-            <span className="chip">Framer Motion</span>
-            <span className="chip">Webflow</span>
-            <span className="chip">Supabase</span>
-            <span className="chip">Contentful</span>
-            <span className="chip">GitHub</span>
-            <span className="chip">CodeSandbox</span>
-            <span className="chip">Vercel</span>
-            <span className="chip">Netlify</span>
-          </div>
-        </div>
-      </Reveal>
+
     </div>
   );
 };

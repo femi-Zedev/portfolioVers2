@@ -1,52 +1,50 @@
 import { Reveal } from "@/components/utils/Reveal";
 import styles from "./experience.module.scss";
-import { MessageDescriptor } from "@lingui/core";
-import { useLingui } from "@lingui/react";
+import { IExperienceItem } from "@/interfaces/hygraph.interface";
 
 interface Props {
   title: string;
-  position: MessageDescriptor;
+  position: string;
   time: string;
   location: string;
-  description: MessageDescriptor;
+  description: string;
   tech: string[];
 }
 
 export const ExperienceItem = ({
-  title,
-  position,
-  time,
-  location,
-  description,
-  tech,
-}: Props) => {
-  const { i18n } = useLingui();
+ companyName,
+ period,
+ role,
+ roleDescription,
+ techSkills
+}: IExperienceItem) => {
+  // const { i18n } = useLingui();
   
   return (
     <div className={styles.experience}>
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.title}>{title}</span>
+          <span className={styles.title}>{companyName}</span>
         </Reveal>
         <Reveal>
-          <span>{time}</span>
+          <span>{period}</span>
         </Reveal>
       </div>
 
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.position}>{i18n._(position)}</span>
+          <span className={styles.position}>{role}</span>
         </Reveal>
-        <Reveal>
+        {/* <Reveal>
           <span>{location}</span>
-        </Reveal>
+        </Reveal> */}
       </div>
       <Reveal>
-        <p className={styles.description}>{i18n._(description)}</p>
+        <p className={styles.description}>{roleDescription}</p>
       </Reveal>
       <Reveal>
         <div className={styles.tech}>
-          {tech.map((item) => (
+          {techSkills.map((item) => (
             <span key={item} className="chip">
               {item}
             </span>

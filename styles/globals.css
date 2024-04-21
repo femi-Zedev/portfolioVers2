@@ -15,6 +15,7 @@
   --text-md: 2.2rem;
   --text-lg: 3.6rem;
   --text-xl: 5.6rem;
+  --text-bigXl: 7.2rem; /* custom */
   --text-2xl: 9.6rem;
 }
 
@@ -76,4 +77,29 @@ a {
 .externalLinks {
   font-size: var(--text-sm);
   color: var(--brand);
+}
+
+body::-webkit-scrollbar {
+	/* display: none; */
+	overflow-x: hidden;
+	margin-right: 10px;
+  margin-top: 4px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li::marker {
+  margin-right: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: var(--brand);
+	border-radius: 0px;
+}
+
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
 }

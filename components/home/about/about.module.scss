@@ -8,6 +8,19 @@
   }
 }
 
+.aboutWrapper p:first-child:first-letter {
+    background: var(--background-light);
+    padding: 1rem;
+    border-radius: 0.4rem;
+  
+    font-size: var(--text-md);
+    font-weight: bold;
+  
+    margin-right: 0.6rem;
+  
+    float: left;
+}
+
 .aboutText {
   margin-bottom: 2.4rem;
   font-weight: 200;
@@ -28,15 +41,4 @@
   color: var(--brand);
 }
 
-.highlightFirstLetter:first-letter {
-  background: var(--background-light);
-  padding: 1rem;
-  border-radius: 0.4rem;
 
-  font-size: var(--text-md);
-  font-weight: bold;
-
-  margin-right: 0.6rem;
-
-  float: left;
-}

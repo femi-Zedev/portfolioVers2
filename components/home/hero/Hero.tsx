@@ -2,37 +2,44 @@ import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
-import { Trans } from '@lingui/macro'
+import { RichText } from '@graphcms/rich-text-react-renderer';
+import { IntroSection } from "@/interfaces/hygraph.interface";
+import { SectionHeader } from "@/components/utils/SectionHeader";
 
-export const Hero = () => {
+export const Hero = ({ introSection }: { introSection: IntroSection | null }) => {
+  if (!introSection) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <section className={`section-wrapper ${styles.hero}`}>
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-            <Trans id="hero-hi">
-            Hey, I&apos;m Femi<span>.</span>
-            </Trans>
+            {introSection.title}
           </h1>
         </Reveal>
         <Reveal>
-          <h2 className={styles.subTitle}>
-          <Trans id="hero-role">I&apos;m a <span>Frontend Developer</span></Trans>  
-          </h2>
+          <RichText content={introSection.careerRole.raw}
+            renderers={{
+              h1: ({ children }) => (
+                <h1 className={styles.subTitle}>
+                  {children}
+                </h1>)
+            }} />
         </Reveal>
         <Reveal>
-          <p className={styles.aboutCopy}>
-          <Trans id="">
-             I&apos;ve spent the last 4 years building and scaling software for
-            some pretty cool companies. I&apos;m also a great advocate of good user experience and good looking app screens 📱.
-            that&apos;s why I help startups and individuals to come up with a prototype of their ideas with the help of figma.
-            Let&apos;s connect!
-          </Trans>
-          </p>
+          <RichText content={introSection.introParagraph.raw}
+            renderers={{
+              p: ({ children }) => (
+                <p className={styles.aboutCopy}>
+                  {children}
+                </p>)
+            }} />
         </Reveal>
         <Reveal>
           <StandardButton onClick={() => document.getElementById("contact")?.scrollIntoView()}>
-            <Trans id="hero-cta">Contact me</Trans>
+            {introSection.contact_me.label}
           </StandardButton>
         </Reveal>
       </div>
