@@ -25,7 +25,7 @@ const Index: NextPage<Props> = ({ pages }) => {
   return (
     <>
      <Head>
-        <title>Femi </title>
+        <title>Femi Dev </title>
         <meta charSet="utf-8"/>
         <meta name="google-site-verification" content="XjjGg1wH-mQBt186CmOXy-kpQGFhwAF2bLsqtMq3eps" />
         <meta name="robots" content="index,follow" />
