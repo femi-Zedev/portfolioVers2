@@ -7,6 +7,7 @@ import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
 import { ProjectItem } from "@/interfaces/hygraph.interface";
 import { RichText } from "@graphcms/rich-text-react-renderer";
+import Image from "next/image";
 
 // export interface ProjectType {
 //   modalContent: JSX.Element;
@@ -62,10 +63,14 @@ export const Project = ({
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
-          <img
+          <Image
+            width={0}
+            height={0}
+            loading="eager"
             src={projectBanner.url}
             alt={`An image of the ${name} project.`}
             style={{
+              height: "auto",
               width: hovered ? "90%" : "85%",
               rotate: hovered ? "2deg" : "0deg",
             }}
@@ -107,13 +112,13 @@ export const Project = ({
       </motion.div>
       <ProjectModal
         modalContent={
-        <RichText content={fullDescription.raw}
-          renderers={{
-            p: ({ children }) => (
-              <p>
-                {children}
-              </p>)
-          }} />}
+          <RichText content={fullDescription.raw}
+            renderers={{
+              p: ({ children }) => (
+                <p>
+                  {children}
+                </p>)
+            }} />}
         projectLink={demoLink}
         setIsOpen={setIsOpen}
         isOpen={isOpen}
