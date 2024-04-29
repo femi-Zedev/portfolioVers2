@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
-import Image from "next/image";
+import { CustomNextImage } from "@/components/utils/CustomNextImage";
 
 interface Props {
   isOpen: boolean;
@@ -50,13 +50,23 @@ export const ProjectModal = ({
         onClick={(e) => e.stopPropagation()}
         className={styles.modalCard}
       >
-        <Image
+        <CustomNextImage
+            props={{
+              src: imgSrc,
+              alt: `An image of the ${title} project.`,
+              style: { }
+            }}
+            className={styles.modalImage}
+            styles={{ height: '445px'}}
+
+            />
+        {/* <Image
           className={styles.modalImage}
           src={imgSrc}
           width={700}
           height={445}
           alt={`An image of the ${title} project.`}
-        />
+        /> */}
         <div className={styles.modalContent}>
           <h4>{title}</h4>
           <div className={styles.modalTech}>{tech.join(" - ")}</div>

@@ -7,17 +7,9 @@ import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
 import { ProjectItem } from "@/interfaces/hygraph.interface";
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import Image from "next/image";
+import { CustomNextImage } from "@/components/utils/CustomNextImage";
 
-// export interface ProjectType {
-//   modalContent: JSX.Element;
-//   description: string;
-//   projectLink: string;
-//   imgSrc: string;
-//   tech: string[];
-//   title: string;
-//   code?: string;
-// }
+
 
 export const Project = ({
   name,
@@ -63,10 +55,22 @@ export const Project = ({
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
-          <Image
-            width={0}
-            height={0}
-            loading="eager"
+          <CustomNextImage
+            props={{
+              src: projectBanner.url,
+              alt: `An image of the ${name} project.`,
+              style: {  borderRadius: '4px', objectFit: "cover"}
+            }}
+
+            styles={{
+              height: "100%",
+              scale: hovered ? "1.05" : "1",
+              width: hovered ? "88%" : "85%",
+              rotate: hovered ? "2deg" : "0deg",
+            }} />
+          {/* <Image
+            width={336}
+            height={214}
             src={projectBanner.url}
             alt={`An image of the ${name} project.`}
             style={{
@@ -74,7 +78,7 @@ export const Project = ({
               width: hovered ? "90%" : "85%",
               rotate: hovered ? "2deg" : "0deg",
             }}
-          />
+          /> */}
         </div>
         <div className={styles.projectCopy}>
           <Reveal width="100%">
