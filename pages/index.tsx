@@ -8,8 +8,8 @@ interface Props {
   pages: Page[];
 }
 
-export const getStaticProps = async () => {
-  const { pages } = await getHomePage();
+export const getStaticProps = async ({ locale } : { locale: string}) => {
+  const { pages } = await getHomePage(locale || 'fr');
 
   return {
     props: {
