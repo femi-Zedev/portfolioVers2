@@ -9,17 +9,17 @@ interface GraphClientResponse {
   pages: Page
 }
 
-export const getHomePage = async () : Promise<GraphClientResponse> => {
+export const getHomePage = async (locale: string): Promise<GraphClientResponse> => {
   const query = gql`
-  query MyQuery {
-    pages {
+  query MyQuery($locale: Locale!) {
+    pages(locales: [$locale]) {
       meta {
-        title,
-        desc,
-        siteName,
-        ogSiteName,
-        ogDesc,
-         __typename
+        title
+        desc
+        siteName
+        ogSiteName
+        ogDesc
+        __typename
       }
       navBar {
         logo {
@@ -53,38 +53,38 @@ export const getHomePage = async () : Promise<GraphClientResponse> => {
           }
           useFullLinks
           usedStacks {
-            title,
+            title
             stack
           }
         }
         ... on ProjectSection {
           __typename
-          title,
+          title
           projectItems {
-            name,
-            summary{
+            name
+            summary {
               raw
-            },
-            fullDescription{
+            }
+            fullDescription {
               raw
-            },
-            projectBanner{
+            }
+            projectBanner {
               url
             }
-            githubLink,
-            demoLink,
-            techStack,
+            githubLink
+            demoLink
+            techStack
           }
         }
         ... on ExperienceSection {
           __typename
-          title,
-          experienceItems{
-            companyName,
-            role,
+          title
+          experienceItems {
+            companyName
+            role
             period
-            roleDescription,
-            techSkills,
+            roleDescription
+            techSkills
           }
         }
         ... on ContactSection {
@@ -97,9 +97,9 @@ export const getHomePage = async () : Promise<GraphClientResponse> => {
       }
     }
   }
-  `
-  const response = graphQLClient.request(query);
-  return response as unknown as  GraphClientResponse;
+`;
+  const response = graphQLClient.request(query, { locale });
+  return response as unknown as GraphClientResponse;
 }
 
 

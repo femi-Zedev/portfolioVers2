@@ -50,13 +50,17 @@ export const Heading = () => {
 
 
 
-  // function handleLangChange() {
-  //   locale == 'en' ? setLocale('fr') : setLocale('en')
-  // }
-
-  function openResumeViewer() {
-    router.locale === 'en' ? window.open("/resume_en.pdf") : window.open("/resume_fr.pdf")
+  function handleLangChange() {
+    if(router.locale == 'en') {
+      router.push({ pathname: '/fr', } )
+    } else {
+      router.push({ pathname: '/en', } )
+    }
   }
+
+  // function openResumeViewer() {
+  //   router.locale === 'en' ? window.open("/resume_en.pdf") : window.open("/resume_fr.pdf")
+  // }
 
   return (
     <header className={styles.heading}>
@@ -76,10 +80,10 @@ export const Heading = () => {
 
         <div className={styles.flex_wrapper}>
 
-{/* 
+
           <button className={styles.switcherButton} onClick={handleLangChange}>
-            {locale}
-          </button> */}
+            {router.locale == 'en' ? 'Fr': 'En'}
+          </button>
 {/* 
           {
             !(breakpoint == 'sm' || breakpoint == 'xs') &&
