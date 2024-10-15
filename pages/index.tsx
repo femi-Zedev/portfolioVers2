@@ -1,5 +1,5 @@
 import { Home } from "@/components/home/Home";
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import { NextPage } from "next";
 import Head from "next/head";
 import { getHomePage } from "@/services/index"
 import { Page } from "@/interfaces/hygraph.interface";
@@ -11,9 +11,13 @@ interface Props {
 export const getStaticProps = async ({ locale } : { locale: string}) => {
   const { pages } = await getHomePage(locale || 'fr');
 
+  if (!pages) {
+    console.error('No pages data found for locale:', locale);
+  }
+
   return {
     props: {
-      pages,
+      pages: pages || [],
     },
   };
 };

@@ -21,7 +21,8 @@ export const Project = ({
   techStack,
 }: ProjectItem) => {
 
-  const [hovered, setHovered] = useState(false);
+  console.log(projectBanner)
+
   const [isOpen, setIsOpen] = useState(false);
 
   const controls = useAnimation();
@@ -50,8 +51,6 @@ export const Project = ({
         transition={{ duration: 0.75 }}
       >
         <div
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
@@ -61,24 +60,12 @@ export const Project = ({
               alt: `An image of the ${name} project.`,
               style: {  borderRadius: '4px', objectFit: "cover"}
             }}
-
+            whileHover={{ scale: 1.08, rotate: 2, transition: { duration: 0.1} }}
             styles={{
               height: "100%",
-              scale: hovered ? "1.05" : "1",
-              width: hovered ? "88%" : "85%",
-              rotate: hovered ? "2deg" : "0deg",
+              width: "85%",
             }} />
-          {/* <Image
-            width={336}
-            height={214}
-            src={projectBanner.url}
-            alt={`An image of the ${name} project.`}
-            style={{
-              height: "auto",
-              width: hovered ? "90%" : "85%",
-              rotate: hovered ? "2deg" : "0deg",
-            }}
-          /> */}
+        
         </div>
         <div className={styles.projectCopy}>
           <Reveal width="100%">

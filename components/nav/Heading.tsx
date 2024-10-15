@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { AnimatePresence, motion } from "framer-motion";
+import UnderlineLink from "../utils/UnderlineLink";
 
 
 export type LOCALES = 'en' | 'fr' | 'pseudo'
@@ -51,10 +52,10 @@ export const Heading = () => {
 
 
   function handleLangChange() {
-    if(router.locale == 'en') {
-      router.push({ pathname: '/fr', } )
+    if (router.locale == 'en') {
+      router.push({ pathname: '/fr', })
     } else {
-      router.push({ pathname: '/en', } )
+      router.push({ pathname: '/en', })
     }
   }
 
@@ -80,11 +81,14 @@ export const Heading = () => {
 
         <div className={styles.flex_wrapper}>
 
+          <UnderlineLink href="https://blog.femidev.com/" target="_blank">
+            Blog
+          </UnderlineLink>
 
           <button className={styles.switcherButton} onClick={handleLangChange}>
-            {router.locale == 'en' ? 'Fr': 'En'}
+            {router.locale == 'en' ? 'Fr' : 'En'}
           </button>
-{/* 
+          {/* 
           {
             !(breakpoint == 'sm' || breakpoint == 'xs') &&
             <OutlineButton onClick={openResumeViewer}>
