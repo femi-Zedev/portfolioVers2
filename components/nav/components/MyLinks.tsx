@@ -8,50 +8,51 @@ import { SiDiscord } from "react-icons/si";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+interface MyLinksProps {
+  only?: ("linkedin" | "github" | "discord" | "twitter")[];
+}
 
+export const MyLinks = ({ only }: MyLinksProps) => {
+  const links = [
+    {
+      key: "linkedin",
+      url: "https://www.linkedin.com/in/femi-akotonou-3b8882183/",
+      icon: <AiFillLinkedin size="2.4rem" />,
+    },
+    {
+      key: "github",
+      url: "https://github.com/femi-Zedev",
+      icon: <AiFillGithub size="2.4rem" />,
+    },
+    {
+      key: "discord",
+      url: "https://discordapp.com/users/femi_akt#6685",
+      icon: <SiDiscord size="2.4rem" />,
+    },
+    // Uncomment if you want Twitter
+    // {
+    //   key: "twitter",
+    //   url: "https://twitter.com/yourusername",
+    //   icon: <AiFillTwitterCircle size="2.4rem" />,
+    // },
+  ];
 
-export const MyLinks = () => {
+  const filtered = only ? links.filter((l) => only.includes(l.key as any)) : links;
+
   return (
     <div className={styles.links}>
-      <motion.span
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.0 }}
-      >
-        <Link href="https://www.linkedin.com/in/femi-akotonou-3b8882183/" target="_blank" rel="nofollow">
-          <AiFillLinkedin size="2.4rem" />
-        </Link>
-      </motion.span>
-
-      <motion.span
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <Link href="https://github.com/femi-Zedev" target="_blank" rel="nofollow">
-          <AiFillGithub size="2.4rem" />
-        </Link>
-      </motion.span>
-
-      <motion.span
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <Link href="https://discordapp.com/users/femi_akt#6685" target="_blank" rel="nofollow">
-          <SiDiscord size="2.4rem" />
-        </Link>
-      </motion.span>
-
-      {/* <motion.span
-        initial={{ y: -30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-      >
-        <Link href="https://www.codepen.io" target="_blank" rel="nofollow">
-          <AiFillCodepenCircle size="2.4rem" />
-        </Link>
-      </motion.span> */}
+      {filtered.map((link, i) => (
+        <motion.span
+          key={link.key}
+          initial={{ y: -30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 * i }}
+        >
+          <Link href={link.url} target="_blank" rel="nofollow">
+            {link.icon}
+          </Link>
+        </motion.span>
+      ))}
     </div>
   );
 };

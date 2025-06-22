@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import styles from "./header.module.scss";
 import { Reveal } from "./Reveal";
 
 interface Props {
@@ -9,18 +8,17 @@ interface Props {
 
 export const SectionHeader = ({ title, dir = "r" }: Props) => {
   return (
-    <div className={styles.sectionHeader} style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }} >
-      <div className={styles.line} />
+    <div className={`flex items-center gap-6 mb-6 ${dir === "l" ? "flex-row-reverse" : "flex-row"}`}>
+      <div className="w-full h-px bg-text opacity-30" />
       <h3>
-        <span style={{ width: "max-content", display:'block' }}>
+        <span className="w-max block">
           <Reveal>
-            <span className={styles.title}>
+            <span className="textC-xl font-black text-right">
               {title}
-              <span>.</span>
+              <span className="text-brand">.</span>
             </span>
           </Reveal>
         </span>
-
       </h3>
     </div>
   );

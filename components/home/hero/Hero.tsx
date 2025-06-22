@@ -1,7 +1,6 @@
 import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
-import styles from "./hero.module.scss";
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import { IntroSection } from "@/interfaces/hygraph.interface";
 import { SectionHeader } from "@/components/utils/SectionHeader";
@@ -12,10 +11,10 @@ export const Hero = ({ introSection }: { introSection: IntroSection | null }) =>
   }
 
   return (
-    <section className={`section-wrapper ${styles.hero}`}>
-      <div className={styles.copyWrapper}>
+    <section className="section-wrapper mb-24 md:mb-12">
+      <div className="relative z-10 w-fit my-12">
         <Reveal>
-          <h1 className={styles.title}>
+          <h1 className="textC-bigXl font-black leading-[1.1]">
             {introSection.title}
           </h1>
         </Reveal>
@@ -23,7 +22,7 @@ export const Hero = ({ introSection }: { introSection: IntroSection | null }) =>
           <RichText content={introSection.careerRole.raw}
             renderers={{
               h1: ({ children }) => (
-                <h1 className={styles.subTitle}>
+                <h1 className="textC-lg leading-[1.1] mt-4 font-extralight bold-text">
                   {children}
                 </h1>)
             }} />
@@ -32,7 +31,7 @@ export const Hero = ({ introSection }: { introSection: IntroSection | null }) =>
           <RichText content={introSection.introParagraph.raw}
             renderers={{
               p: ({ children }) => (
-                <p className={styles.aboutCopy}>
+                <p className="my-6 max-w-[700px] font-extralight">
                   {children}
                 </p>)
             }} />

@@ -78,3 +78,120 @@
 .sideBar::-webkit-scrollbar {
   display: none;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #181a1b;
+  width: 300px;
+  min-width: 240px;
+  height: 100vh;
+  padding: 2.4rem 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+  margin: 0;
+}
+
+.menuSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.menuItem {
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.menuItem:hover, .selected {
+  background: #23272a;
+  color: #C4FA70;
+  opacity: 1;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.extraSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 2.4rem 0 0 0;
+  align-items: flex-start;
+}
+
+.blogLink {
+  color: #C4FA70;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  background: transparent;
+  display: block;
+}
+.blogLink:hover {
+  background: #23272a;
+  color: #fff;
+}
+
+.switcherButton {
+  padding: 0.8rem 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: 800;
+  background: #ffffff0d;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s color, 0.2s background;
+  font-size: 1.1rem;
+}
+.switcherButton:hover {
+  color: #181a1b;
+  background: #C4FA70;
+}
