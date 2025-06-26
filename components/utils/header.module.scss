@@ -6,7 +6,7 @@
 }
 
 .title {
-  font-size: var(--text-xl);
+  font-size: var(--textC-xl);
   font-weight: 900;
   text-align: end;
 
@@ -15,7 +15,7 @@
   }
 
   @media (max-width: 768px) {
-    font-size: var(--text-lg);
+    font-size: var(--textC-lg);
   }
 }
 

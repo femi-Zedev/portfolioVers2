@@ -13,7 +13,7 @@ export const About = ({ aboutSection }: { aboutSection: AboutSection | null }) =
   return (
     <section id="about" className="section-wrapper">
       <SectionHeader title={aboutSection?.title} dir="l" />
-      <div className="grid grid-cols-[1fr_300px] gap-6 md:grid-cols-1">
+      <div className="max-md:grid max-md:grid-cols-1 grid-cols-[1fr_300px] gap-6 md:grid-cols-1">
         <div>
           <Reveal>
             <RichText content={aboutSection.aboutParagraph.raw}

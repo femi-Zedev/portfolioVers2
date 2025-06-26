@@ -38,7 +38,7 @@
 
   h4 {
     font-weight: bold;
-    font-size: var(--text-md);
+    font-size: var(--textC-md);
     flex-shrink: 0;
 
     max-width: calc(100% - 150px);
@@ -67,7 +67,7 @@
   span {
     display: inline-block;
 
-    font-size: var(--text-xs);
+    font-size: var(--textC-xs);
     font-weight: 400;
     color: var(--brand);
 
@@ -84,7 +84,7 @@
   flex-wrap: wrap;
   gap: 1.2rem;
 
-  font-size: var(--text-xs);
+  font-size: var(--textC-xs);
   color: var(--brand);
 
   margin: 0.8rem 0;

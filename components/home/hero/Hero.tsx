@@ -42,7 +42,7 @@ export const Hero = ({ introSection }: { introSection: IntroSection | null }) =>
           </StandardButton>
         </Reveal>
       </div>
-      <DotGrid />
+      {/* <DotGrid /> */}
     </section>
   );
 };

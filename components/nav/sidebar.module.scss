@@ -13,8 +13,10 @@
   align-items: center;
   overflow-y: scroll;
 
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 
   a {
     height: 100px;
@@ -22,7 +24,7 @@
     flex-shrink: 0;
 
     writing-mode: vertical-lr;
-    font-size: var(--text-sm);
+    font-size: var(--textC-sm);
     font-weight: 200;
     display: flex;
     align-items: center;
@@ -51,7 +53,7 @@
 .logo {
   flex-shrink: 0;
 
-  font-size: var(--text-md);
+  font-size: var(--textC-md);
   font-weight: 900;
   line-height: 1;
 
@@ -68,7 +70,7 @@
   margin: 1.8rem 0;
 
   span {
-    font-size: var(--text-md);
+    font-size: var(--textC-md);
     font-weight: 900;
     line-height: 1;
     color: var(--brand);
@@ -140,7 +142,9 @@
   text-decoration: none;
   opacity: 0.8;
 }
-.menuItem:hover, .selected {
+
+.menuItem:hover,
+.selected {
   background: #23272a;
   color: #C4FA70;
   opacity: 1;
@@ -173,6 +177,7 @@
   background: transparent;
   display: block;
 }
+
 .blogLink:hover {
   background: #23272a;
   color: #fff;
@@ -191,7 +196,87 @@
   transition: 0.2s color, 0.2s background;
   font-size: 1.1rem;
 }
+
 .switcherButton:hover {
   color: #181a1b;
   background: #C4FA70;
+}
+
+.navIcon {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  position: relative;
+  border: none;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+
+.navIcon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  -ms-transform: rotate(0deg);
+}
+
+
+
+.navIcon span:nth-child(1) {
+  top: 6px;
+}
+
+.navIcon span:nth-child(2),
+.navIcon span:nth-child(3) {
+  top: 14px;
+}
+
+.navIcon span:nth-child(4) {
+  top: 22px;
+}
+
+.navOpen span:nth-child(1) {
+  top: 14px;
+  width: 0%;
+  left: 50%;
+}
+
+.navOpen span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navOpen span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navOpen span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }

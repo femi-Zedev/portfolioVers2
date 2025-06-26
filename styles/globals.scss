@@ -24,18 +24,24 @@
   --text: rgb(235, 236, 243);
   --brand: #C4FA70;
 
-  // --text-xs: 1.6rem;
-  // --text-sm: 1.8rem;
-  // --text-md: 2.2rem;
-  // --text-lg: 3.6rem;
-  // --text-xl: 5.6rem;
-  // --text-bigXl: 7.2rem;
-  // /* custom */
-  // --text-2xl: 9.6rem;
+  --textC-xs: 1.6rem;
+  --textC-sm: 1.8rem;
+  --textC-md: 2.2rem;
+  --textC-lg: 3.6rem;
+  --textC-xl: 5.6rem;
+  --textC-bigXl: 7.2rem;
+  /* custom */
+  --textC-2xl: 9.6rem;
 }
 
 .textC-bigXl {
   font-size: 7.2rem;
+}
+
+@media (max-width: 768px) {
+  .textC-bigXl {
+    font-size: 5.8rem;
+  }
 }
 
 .textC-2xl {
@@ -44,6 +50,12 @@
 
 .textC-xl {
   font-size: 5.6rem;
+}
+
+@media (max-width: 768px) {
+  .textC-xl {
+    font-size: 3.2rem;
+  }
 }
 
 .textC-lg {
@@ -124,14 +136,14 @@ a {
 }
 
 .chip {
-  font-size: var(--text-xs);
+  font-size: var(--textC-xs);
   background: var(--background-light);
   padding: 0.2rem 0.8rem;
   border-radius: 999px;
 }
 
 .externalLinks {
-  font-size: var(--text-sm);
+  font-size: var(--textC-sm);
   color: var(--brand);
 }
 

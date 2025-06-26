@@ -65,11 +65,11 @@ export const ComponentName: React.FC<IComponentProps> = ({ props }) => {
   --brand: rgb(10, 255, 157);
 
   /* Typography */
-  --text-xs: 1.6rem;
-  --text-sm: 1.8rem;
-  --text-md: 2.2rem;
-  --text-lg: 3.6rem;
-  --text-xl: 5.6rem;
+  --textC-xs: 1.6rem;
+  --textC-sm: 1.8rem;
+  --textC-md: 2.2rem;
+  --textC-lg: 3.6rem;
+  --textC-xl: 5.6rem;
   --text-2xl: 9.6rem;
 }
 ```

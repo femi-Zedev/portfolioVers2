@@ -1,8 +1,6 @@
 import React from "react";
 import { SideBar } from "../nav/SideBar";
 import { Hero } from "./hero/Hero";
-import styles from "./home.module.scss";
-import { Heading } from "../nav/Heading";
 import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
 import { Experience } from "./experience/Experience";
@@ -27,9 +25,9 @@ export const Home = ({ pageData }: { pageData: Page }) => {
           {/* <Heading /> */}
           <Hero introSection={getDynamicSection(pageData.dynamicZone, 'IntroSection') as IntroSection} />
           <About aboutSection={getDynamicSection(pageData.dynamicZone, 'AboutSection') as AboutSection} />
+          <Writing />
           <Projects projectSection={getDynamicSection(pageData.dynamicZone, 'ProjectSection') as ProjectSection} />
           <Experience experienceSection={getDynamicSection(pageData.dynamicZone, 'ExperienceSection') as ExperienceSection} />
-          <Writing />
           <Contact contactSection={getDynamicSection(pageData.dynamicZone, 'ContactSection') as ContactSection} />
           <div
             style={{

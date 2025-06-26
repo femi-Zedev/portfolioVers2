@@ -68,7 +68,7 @@ export const BlogArticles = () => {
   const remainingPosts = posts.slice(2, 5);
 
   return (
-    <div className="space-y-20">
+    <section id='writing' className="space-y-20">
       {/* First row - Latest blog posts */}
       <div className="space-y-6">
         <h2 className="text-4xl font-bold text-text">Latest blog posts</h2>
@@ -93,7 +93,7 @@ export const BlogArticles = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:flex gap-4 lg:gap-6">
           {remainingPosts.map((post) => (
             <BlogArticleCard
               key={post.slug}
@@ -105,6 +105,6 @@ export const BlogArticles = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }; 
