@@ -4,8 +4,11 @@ import { DotGrid } from "./DotGrid";
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import { IntroSection } from "@/interfaces/hygraph.interface";
 import { SectionHeader } from "@/components/utils/SectionHeader";
+import { useRouter } from "next/router";
+import { MessageSquareText } from "lucide-react";
 
 export const Hero = ({ introSection }: { introSection: IntroSection | null }) => {
+
   if (!introSection) {
     return <div>Loading...</div>;
   }
@@ -37,8 +40,11 @@ export const Hero = ({ introSection }: { introSection: IntroSection | null }) =>
             }} />
         </Reveal>
         <Reveal>
-          <StandardButton onClick={() => document.getElementById("contact")?.scrollIntoView()}>
-            {introSection.contact_me.label}
+          <StandardButton onClick={() => window.open(introSection.contact_me.link, '_blank')}>
+            <div className="flex items-center gap-4">
+              {introSection.contact_me.label}
+              <MessageSquareText size={20} />
+            </div>
           </StandardButton>
         </Reveal>
       </div>

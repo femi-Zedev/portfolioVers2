@@ -241,13 +241,13 @@ export const SideBar = ({ links }: { links: CTA[] }) => {
                     onClick={() => handleLangChange("en")}
                     className="cursor-pointer text-2xl p-4 data-[highlighted]:bg-white/10 data-[highlighted]:text-brand transition-colors rounded-lg"
                   >
-                    English (Us)
+                    English (US)
                   </DropdownMenuItem>
                   <DropdownMenuItem
                     onClick={() => handleLangChange("fr")}
                     className="cursor-pointer text-2xl p-4 data-[highlighted]:bg-white/10 data-[highlighted]:text-brand transition-colors rounded-lg"
                   >
-                    Français (Fr)
+                    Français (FR)
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
