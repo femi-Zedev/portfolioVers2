@@ -1,9 +1,7 @@
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
-import { LOCALES } from "@/components/nav/Heading";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { ProjectSection } from "@/interfaces/hygraph.interface";
 
 export const Projects = ({ projectSection }: { projectSection: ProjectSection | null }) => {
@@ -16,7 +14,7 @@ export const Projects = ({ projectSection }: { projectSection: ProjectSection | 
   if (!projectSection) {
     return <div>Loading...</div>;
   }
-  
+
 
   return (
     <section className="section-wrapper" id="projects">

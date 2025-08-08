@@ -14,6 +14,9 @@ importers:
       '@graphcms/rich-text-react-renderer':
         specifier: ^0.6.1
         version: 0.6.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@graphcms/rich-text-types':
+        specifier: ^0.5.1
+        version: 0.5.1
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.1.15
         version: 2.1.15(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
